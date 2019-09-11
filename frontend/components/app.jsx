@@ -1,24 +1,23 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
 import GreetingContainer from './greeting/greeting_container';
-import LoginFormContainer from '../components/session_form/login_form_container';
-import SignupFormContainer from '../components/session_form/signup_form_container';
-import { AuthRoute } from '../util/route_util';
+import Modal from './modal/modal';
+import { 
+  Route, 
+  Switch, 
+  Link 
+} from 'react-router-dom';
 
 const App = () => {
   return (
-    <nav>
+    <nav className="nav-main-container">
+
         <div className="left-nav">
-          <div className="logo">
-            <h1>campThrill</h1>
-            <GreetingContainer />
-          </div>
+          <h1>CampThrill</h1>
         </div>
+
         <div className="right-nav">
-          <div className="links">
-            <AuthRoute exact path="/login" component={LoginFormContainer} />
-            <AuthRoute exact path="/signup" component={SignupFormContainer} />
-          </div>
+          <GreetingContainer />
+          <Modal />
         </div>
     </nav>
   )

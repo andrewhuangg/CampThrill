@@ -60,57 +60,22 @@ class SessionForm extends React.Component {
     }, 100);
   }
     // uses set interval to add 1 letter to each state using shift
-
-  handleFirstName(fname) {
-    let firstNameArr = fname.split('');
-    window.setInterval(() => {
-      if (firstNameArr.length !== 0) {
-        let char = firstNameArr.shift();
-        this.setState({
-          first_name: this.state.first_name + char
-        });
-      }
-    }, 100);
-  }
-  
-  handleLastName(lname) {
-    let lastNameArr = lname.split('');
-    window.setInterval(() => {
-      if (lastNameArr.length !== 0) {
-        let char = lastNameArr.shift();
-        this.setState({
-          last_name: this.state.last_name + char
-        });
-      }
-    }, 100);
-  }
     
-
   handleDemo(e) {
     e.preventDefault();
-    this.setState({
-      email: "",
-      password: ""
-    });
     let email = "mamba@lakers.com";
     let password = "lakers24";
     this.handleEmail(email);
     this.handlePassword(password);
-    // let fname = "kobe"
-    // let lname = "bryant"
-    // this.handleFirstName(fname);
-    // this.handleLastName(lname);
     setTimeout(() => {
       const user = Object.assign({}, this.state);
-      this.props.processForm(user);
-    }, 1500);
-    this.setState({
-      email: "",
-      password: ""
-    })
+      this.props.processForm(user)
+    }, 1500)
   }
-    //calls both password and email handles
-    //uses set time out on process form to submit
+
+  //calls both password and email handles
+  //uses set time out on process form to submit
+
 
 
   renderErrors() {
@@ -133,86 +98,119 @@ class SessionForm extends React.Component {
 
   render() {
 
+    const loginType = (this.props.formType === "login" ? "signup" : "login")
+    
     const login = 
-      (<form onSubmit={this.handleSubmit}>
-          <div>
-            <h1>Welcome to campThrill</h1>
-            please {this.props.formType} or {this.props.navLink}
+      (<form className="login-form" onSubmit={this.handleSubmit}>
+          <div className="form-title">
+            <big className="welcome-title">Welcome back fellow thrillist!</big>
+            <p className="welcome-title-login-p">it's about time for another ride</p>
           </div>
           <br></br>
+
           {this.renderErrors()}
-          <div>
-            <label>Email:
-                <input
+
+          <div className="login-form-input-container">
+
+            <button className="demo-button" onClick={this.handleDemo}>Demo Login</button>
+
+            <br></br>
+            
+              <h1 className="spacer">or</h1>
+            
+              <input
                 type="text"
                 value={this.state.email}
                 onChange={this.update("email")}
+                placeholder={"Email Address"}
+                className="login-input"
               />
-            </label>
             <br></br>
-            <label>Password:
-                <input
+              <input
                 type="password"
                 value={this.state.password}
                 onChange={this.update("password")}
+                placeholder={"Password"}
+                className="login-input"
               />
-            </label>
             <br></br>
 
-            <input type="submit" value={this.props.formType} />
-            <button onClick={this.handleDemo}>Demo Login</button>
+            <input 
+              className="submit-button" 
+              type="submit" 
+              value={this.props.formType} 
+            />
+
           </div>
         </form>)
 
     const signup = 
-    (<form onSubmit={this.handleSubmit}>
-          <div>
-            <h1>Welcome to campThrill</h1>
-            please {this.props.formType} or {this.props.navLink}
-          </div>
+      (<form className="login-form" onSubmit={this.handleSubmit}>
+
+        <div className="form-title-signup">
+          <big className="welcome-title-signup">Become a fellow thrillist!</big>
+          <p className="welcome-title-p">please {this.props.formType} or {loginType}</p>
+        </div>
+
         <br></br>
-        {this.renderErrors()}
-        <div>
-          <label>First Name:
-              <input
-              type="text"
-              value={this.state.first_name}
-              onChange={this.update("first_name")}
-            />
-          </label>
+
+          {this.renderErrors()}
+
+        <div className="signup-form-input-container">
+
+          <input
+            type="text"
+            value={this.state.first_name}
+            onChange={this.update("first_name")}
+            placeholder={"First Name"}
+            className="signup-input"
+          />
+
           <br></br>
-          <label>Last Name:
-              <input
+
+            <input
               type="text"
               value={this.state.last_name}
               onChange={this.update("last_name")}
+              placeholder={"Last Name"}
+              className="signup-input"
             />
-          </label>
+
           <br></br>
-          <label>Email:
-              <input
+          
+            <input
               type="text"
               value={this.state.email}
               onChange={this.update("email")}
+              placeholder={"Email Address"}
+              className="signup-input"
             />
-          </label>
+          
           <br></br>
-          <label>Password:
-              <input
+
+            <input
               type="password"
               value={this.state.password}
               onChange={this.update("password")}
+              placeholder={"Password"}
+              className="signup-input"
             />
-          </label>
+
           <br></br>
-          <input type="submit" value={this.props.formType} />
+
+          <input 
+            className="submit-button" 
+            type="submit" 
+            value={this.props.formType} 
+          />
+
         </div>
       </form>)
 
     const form = (this.props.formType === "login" ? login : signup)
 
     return (
-      <div>
+      <div className="login-form-container">
         { form }
       </div>
     )
