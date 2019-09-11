@@ -24,8 +24,8 @@ const receiveErrors = (errors) => ({
 //thunk action creators
 export const login = (user) => (dispatch) => (
   SessApiUtil.login(user)
-    .then(user => dispatch(receiveCurrentUser(user))),
-  err => (dispatch(receiveErrors(err.responseJSON)))
+    .then(user => dispatch(receiveCurrentUser(user)),
+  err => (dispatch(receiveErrors(err.responseJSON))))
 );
 
 export const logout = () => (dispatch) => (
@@ -35,6 +35,6 @@ export const logout = () => (dispatch) => (
 
 export const signup = (user) => (dispatch) => (
   SessApiUtil.signup(user)
-    .then(user => dispatch(receiveCurrentUser(user))),
-  err => (dispatch(receiveErrors(err.responseJSON)))
+    .then(user => dispatch(receiveCurrentUser(user)),
+  err => (dispatch(receiveErrors(err.responseJSON))))
 );

@@ -16,18 +16,16 @@
     min-height: 350px;
     width: 32vw;
     min-width: 350px;
-    border: solid blue;
     
     .form-title {
       height: 5vh;
       min-height: 50px;
-      width: 22vw;
+      width: 18vw;
       min-width: 250px;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      border: solid red;
 
       .welcome-title {
         font-size: 20px;
@@ -46,7 +44,7 @@
     .form-title-signup {
       height: 5vh;
       min-height: 50px;
-      width: 22vw;
+      width: 18vw;
       min-width: 250px;
       display: flex;
       justify-content: center;
@@ -71,19 +69,18 @@
     .login-form-input-container {
       height: 35vh;
       min-height: 50px;
-      width: 22vw;
+      width: 18vw;
       min-width: 250px;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      border: solid green;
     }
 
     .signup-form-input-container {
       height: 35vh;
       min-height: 50px;
-      width: 22vw;
+      width: 18vw;
       min-width: 250px;
       display: flex;
       justify-content: center;
@@ -94,14 +91,13 @@
     .demo-button {
       height: 6vh;
       min-height: 25px;
-      width: 21vw;;
+      width: 18vw;;
       min-width: 50px;
       text-align: center;
       border: solid #3B5998 1px;
       background-color: #3B5998;
       color: #FFFFFF;
       margin-top: 2%;
-      border: solid black;
     }
 
     .login-input {
@@ -110,7 +106,7 @@
       color: #808483;
       height: 6vh;
       min-height: 25px;
-      width: 21vw;;
+      width: 18vw;;
       min-width: 50px;
       text-align: center;
     }
@@ -121,7 +117,7 @@
       color: #808483;
       height: 6vh;
       min-height: 25px;
-      width: 21vw;;
+      width: 18vw;;
       min-width: 50px;
       text-align: center;
       margin: 1%;
@@ -133,7 +129,7 @@
       color: #808483;
       height: 6vh;
       min-height: 25px;
-      width: 21vw;;
+      width: 18vw;;
       min-width: 50px;
       text-align: center;
     }
@@ -144,7 +140,7 @@
       color: #FFFFFF;
       height: 6vh;
       min-height: 25px;
-      width: 21vw;;
+      width: 18vw;;
       min-width: 50px;
       text-align: center;
       margin-bottom: 2%;

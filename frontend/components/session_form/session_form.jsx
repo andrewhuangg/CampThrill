@@ -18,10 +18,19 @@ class SessionForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const user = Object.assign({}, this.state);
-    this.props.processForm(user);
-    this.setState({      
-      password: ""
-    });
+    this.props.processForm(user).then(this.props.closeModal);
+  }
+
+  renderErrors() {
+    return (
+      <ul>
+        {this.props.errors.map((error, i) => (
+          <li key={`errors - ${i}`}>
+            {error}
+          </li>
+        ))}
+      </ul>
+    );
   }
 
   handleEmail(email) {
@@ -36,17 +45,6 @@ class SessionForm extends React.Component {
     }, 100);
   }
 
-  renderErrors() {
-    return (
-      <ul>
-        {this.props.errors.map((error, i) => (
-          <li key={`errors - ${i}`}>
-            {error}
-          </li>
-        ))}
-      </ul>
-    );
-  }
 
   handlePassword(password) {
     let passwordArr = password.split('');
@@ -72,11 +70,6 @@ class SessionForm extends React.Component {
       this.props.processForm(user)
     }, 1500)
   }
-
-  //calls both password and email handles
-  //uses set time out on process form to submit
-
-
 
   renderErrors() {
     return (
@@ -112,7 +105,7 @@ class SessionForm extends React.Component {
 
           <div className="login-form-input-container">
 
-            <button className="demo-button" onClick={this.handleDemo}>Demo Login</button>
+          <button className="demo-button" onClick={this.handleDemo}>Demo Login</button>
 
             <br></br>
             
@@ -208,7 +201,6 @@ class SessionForm extends React.Component {
       </form>)
 
     const form = (this.props.formType === "login" ? login : signup)
-
     return (
       <div className="login-form-container">
         { form }

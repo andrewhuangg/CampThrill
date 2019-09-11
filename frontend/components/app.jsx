@@ -8,17 +8,20 @@ import {
 } from 'react-router-dom';
 
 const App = () => {
+
+  const hipcamp_logo = window.hipcamp_logo;
   return (
     <nav className="nav-main-container">
 
-        <div className="left-nav">
-          <h1>CampThrill</h1>
-        </div>
+      <div className="left-nav">
+        {/* <img src={} */}
+      </div>
 
-        <div className="right-nav">
-          <GreetingContainer />
-          <Modal />
-        </div>
+      <div className="right-nav">
+        <GreetingContainer />
+        <Modal />
+      </div>
+
     </nav>
   )
 }
