@@ -657,7 +657,7 @@ function (_React$Component) {
         var user = Object.assign({}, _this4.state);
 
         _this4.props.processForm(user).then(_this4.props.closeModal);
-      }, 1600);
+      }, 1650);
     }
   }, {
     key: "renderErrors",
