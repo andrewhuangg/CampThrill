@@ -67,20 +67,26 @@ class SessionForm extends React.Component {
     this.handlePassword(password);
     setTimeout(() => {
       const user = Object.assign({}, this.state);
-      this.props.processForm(user)
+      this.props.processForm(user).then(this.props.closeModal)
     }, 1500)
   }
 
   renderErrors() {
     return (
-      <ul>
-        {this.props.errors.map((error, i) => (
-          <li key={`errors - ${i}`}>
-            {error}
-          </li>
-        ))}
-      </ul>
+      <div className="errors">
+        <ul>
+          {this.props.errors.map((error, i) => (
+            <li key={`errors - ${i}`}>
+              {error}
+            </li>
+          ))}
+        </ul>
+      </div>
     );
+  }
+
+  componentWillUnmount(){
+    this.props.removeErrors();
   }
 
   update(field) {
@@ -91,13 +97,12 @@ class SessionForm extends React.Component {
 
   render() {
 
-    const loginType = (this.props.formType === "login" ? "signup" : "login")
+    // const loginType = (this.props.formType === "login" ? "signup" : "login")
     
     const login = 
       (<form className="login-form" onSubmit={this.handleSubmit}>
           <div className="form-title">
             <big className="welcome-title">Welcome back fellow thrillist!</big>
-            <p className="welcome-title-login-p">it's about time for another ride</p>
           </div>
           <br></br>
 
@@ -134,6 +139,15 @@ class SessionForm extends React.Component {
               value={this.props.formType} 
             />
 
+          <div className="login-navigation-container">
+            <p className="login-navigation-p">Don't have a CampThrill account?</p>
+            <input
+              className="login-navigation-button"
+              type="submit"
+              value="Login"
+            />
+          </div>
+
           </div>
         </form>)
 
@@ -142,7 +156,6 @@ class SessionForm extends React.Component {
 
         <div className="form-title-signup">
           <big className="welcome-title-signup">Become a fellow thrillist!</big>
-          <p className="welcome-title-p">please {this.props.formType} or {loginType}</p>
         </div>
 
         <br></br>
@@ -196,7 +209,15 @@ class SessionForm extends React.Component {
             type="submit" 
             value={this.props.formType} 
           />
+        </div>
 
+        <div className="signup-navigation-container">
+          <p className="signup-navigation-p">Already a thrillist?</p>
+          <input
+            className="signup-navigation-button"
+            type="submit"
+            value="Login"
+          />
         </div>
       </form>)
 

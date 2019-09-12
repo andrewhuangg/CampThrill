@@ -14,7 +14,7 @@ const App = () => {
     <nav className="nav-main-container">
 
       <div className="left-nav">
-        {/* <img src={} */}
+        <img src={hipcamp_logo} className="hipcamp_logo" />
       </div>
 
       <div className="right-nav">
