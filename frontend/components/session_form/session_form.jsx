@@ -95,6 +95,8 @@ class SessionForm extends React.Component {
     })
   }
 
+
+
   render() {
 
     // const loginType = (this.props.formType === "login" ? "signup" : "login")
@@ -139,14 +141,10 @@ class SessionForm extends React.Component {
               value={this.props.formType} 
             />
 
-          <div className="login-navigation-container">
-            <p className="login-navigation-p">Don't have a CampThrill account?</p>
-            <input
-              className="login-navigation-button"
-              type="submit"
-              value="Login"
-            />
-          </div>
+            <div className="login-navigation-container">
+              <span className="login-navigation-span">Don't have a CampThrill account?</span>
+              {this.props.otherForm}
+            </div>
 
           </div>
         </form>)
@@ -212,12 +210,8 @@ class SessionForm extends React.Component {
         </div>
 
         <div className="signup-navigation-container">
-          <p className="signup-navigation-p">Already a thrillist?</p>
-          <input
-            className="signup-navigation-button"
-            type="submit"
-            value="Login"
-          />
+          <span className="signup-navigation-span">Already a thrillist?</span>
+          {this.props.otherForm}
         </div>
       </form>)
 

@@ -512,6 +512,7 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
       return dispatch(Object(_actions_session_actions__WEBPACK_IMPORTED_MODULE_2__["removeErrors"])());
     },
     otherForm: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      className: "otherFormBtn",
       onClick: function onClick() {
         return dispatch(Object(_actions_modal_actions__WEBPACK_IMPORTED_MODULE_3__["openModal"])('signup'));
       }
@@ -709,13 +710,9 @@ function (_React$Component) {
         value: this.props.formType
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "login-navigation-container"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "login-navigation-p"
-      }, "Don't have a CampThrill account?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        className: "login-navigation-button",
-        type: "submit",
-        value: "Login"
-      }))));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "login-navigation-span"
+      }, "Don't have a CampThrill account?"), this.props.otherForm)));
       var signup = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
         className: "login-form",
         onSubmit: this.handleSubmit
@@ -755,13 +752,9 @@ function (_React$Component) {
         value: this.props.formType
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "signup-navigation-container"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: "signup-navigation-p"
-      }, "Already a thrillist?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        className: "signup-navigation-button",
-        type: "submit",
-        value: "Login"
-      })));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "signup-navigation-span"
+      }, "Already a thrillist?"), this.props.otherForm));
       var form = this.props.formType === "login" ? login : signup;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "login-form-container"
@@ -814,6 +807,7 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
       return dispatch(Object(_actions_session_actions__WEBPACK_IMPORTED_MODULE_2__["removeErrors"])());
     },
     otherForm: react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      className: "otherFormBtn",
       onClick: function onClick() {
         return dispatch(Object(_actions_modal_actions__WEBPACK_IMPORTED_MODULE_3__["openModal"])('login'));
       }

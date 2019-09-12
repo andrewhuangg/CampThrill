@@ -135,16 +135,49 @@
     }
 
     .login-navigation-container {
+      display: flex;
+      justify-content: space-around;
+      width: 18vw;
 
-      .login-navigation-p {
-
+      .login-navigation-span {
+        font-size: 10px;
+        text-align: center;
       }
     }
 
-    .signup-navigation-container { 
-      
-      .signup-navigation-p {
+    .otherFormBtn {
+      font-size: 10px;
+      text-align: center;
+      position: relative;
+    }
 
+    .otherFormBtn::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background: #666666;
+
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 250ms ease-in;
+    }
+
+    .otherFormBtn:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+
+    .signup-navigation-container { 
+      display: flex;
+      justify-content: space-around;
+      width: 18vw;
+      
+      .signup-navigation-span {
+        font-size: 10px;
+        text-align: center;
       }
     }
 
