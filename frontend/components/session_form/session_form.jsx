@@ -68,7 +68,7 @@ class SessionForm extends React.Component {
     setTimeout(() => {
       const user = Object.assign({}, this.state);
       this.props.processForm(user).then(this.props.closeModal)
-    }, 1650)
+    }, 1800)
   }
 
   renderErrors() {
