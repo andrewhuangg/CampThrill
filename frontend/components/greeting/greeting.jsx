@@ -11,6 +11,7 @@ const Greeting = ({ currentUser, logout, openModal }) => {
 
   const sessionLinks = () => (
     <div className="user-menu">
+      
       <button className="navbar-button" onClick={() => openModal('login')}>Log in</button>
         &nbsp; &nbsp;
       <button className="navbar-button" onClick={() => openModal('signup')}>Sign up</button>

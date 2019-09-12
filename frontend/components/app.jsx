@@ -10,19 +10,28 @@ import {
 const App = () => {
 
   const hipcamp_logo = window.hipcamp_logo;
+  const footer_background = window.footer_background;
   return (
-    <nav className="nav-main-container">
+    <div className="main-container">
 
-      <div className="left-nav">
-        <img src={hipcamp_logo} className="hipcamp_logo" />
-      </div>
+      <nav className="nav-main-container">
+        <div className="left-nav">
+          <img src={hipcamp_logo} className="hipcamp_logo" />
+        </div>
 
-      <div className="right-nav">
-        <GreetingContainer />
-        <Modal />
-      </div>
+        <div className="right-nav">
+          <GreetingContainer />
+          <Modal />
+        </div>
+      </nav>
 
-    </nav>
+      <footer className="footer">
+        <section className="footer-main">
+          <img className="ftr-bg"src={footer_background} />;
+        </section>
+      </footer>
+
+    </div>
   )
 }
 

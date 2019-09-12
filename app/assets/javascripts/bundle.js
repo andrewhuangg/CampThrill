@@ -262,7 +262,10 @@ __webpack_require__.r(__webpack_exports__);
 
 var App = function App() {
   var hipcamp_logo = window.hipcamp_logo;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
+  var footer_background = window.footer_background;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "main-container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
     className: "nav-main-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "left-nav"
@@ -271,7 +274,14 @@ var App = function App() {
     className: "hipcamp_logo"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "right-nav"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_greeting_greeting_container__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_modal_modal__WEBPACK_IMPORTED_MODULE_2__["default"], null)));
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_greeting_greeting_container__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_modal_modal__WEBPACK_IMPORTED_MODULE_2__["default"], null))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", {
+    className: "footer"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+    className: "footer-main"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "ftr-bg",
+    src: footer_background
+  }), ";")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (App);
@@ -462,12 +472,12 @@ var Root = function Root(_ref) {
   var store = _ref.store;
   var footer = window.footer_background;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "main-app"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_redux__WEBPACK_IMPORTED_MODULE_1__["Provider"], {
+    className: "body"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_redux__WEBPACK_IMPORTED_MODULE_1__["Provider"], {
     store: store
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["HashRouter"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_app__WEBPACK_IMPORTED_MODULE_2__["default"], {
     store: store
-  })))));
+  }))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Root);
