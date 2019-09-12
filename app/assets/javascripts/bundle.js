@@ -281,7 +281,7 @@ var App = function App() {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "ftr-bg",
     src: footer_background
-  }), ";")));
+  }))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (App);
@@ -657,7 +657,7 @@ function (_React$Component) {
         var user = Object.assign({}, _this4.state);
 
         _this4.props.processForm(user).then(_this4.props.closeModal);
-      }, 1500);
+      }, 1600);
     }
   }, {
     key: "renderErrors",

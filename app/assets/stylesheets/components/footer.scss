@@ -1,0 +1,17 @@
+.footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  .footer-main {
+    background-color: #41305C;
+
+    .ftr-bg {
+      max-height: 250px;
+      background-image: asset-url('footer_background.svg');
+      background-size: cover;
+      background-repeat: repeat-x;
+    }
+  }
