@@ -27,7 +27,6 @@ const App = () => {
 
       <footer className="footer">
         <section className="footer-main">
-          <img className="ftr-bg"src={footer_background} />
         </section>
       </footer>
 

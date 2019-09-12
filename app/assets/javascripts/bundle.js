@@ -278,10 +278,7 @@ var App = function App() {
     className: "footer"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
     className: "footer-main"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "ftr-bg",
-    src: footer_background
-  }))));
+  })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (App);
