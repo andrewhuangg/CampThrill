@@ -103,20 +103,20 @@ class SessionForm extends React.Component {
     
     const login = 
       (<form className="login-form" onSubmit={this.handleSubmit}>
-          <div className="form-title">
-            <big className="welcome-title">Welcome back fellow thrillist!</big>
-          </div>
-          <br></br>
-
-          {this.renderErrors()}
 
           <div className="login-form-input-container">
 
+          <div className="form-title">
+            <big className="welcome-title">Welcome back fellow thrillist!</big>
+          </div>
+
+          {this.renderErrors()}
+
           <button className="demo-button" onClick={this.handleDemo}>Demo Login</button>
 
-            <br></br>
-            
-              <h1 className="spacer">or</h1>
+              <fieldset className="spacer-container">
+                <legend className="spacer">or</legend>
+              </fieldset>
             
               <input
                 type="text"
@@ -141,6 +141,8 @@ class SessionForm extends React.Component {
               value={this.props.formType} 
             />
 
+            <br></br>
+            
             <div className="login-navigation-container">
               <span className="login-navigation-span">Don't have a CampThrill account?</span>
               {this.props.otherForm}
@@ -152,15 +154,13 @@ class SessionForm extends React.Component {
     const signup = 
       (<form className="login-form" onSubmit={this.handleSubmit}>
 
-        <div className="form-title-signup">
-          <big className="welcome-title-signup">Become a fellow thrillist!</big>
-        </div>
+        <div className="signup-form-input-container">
 
-        <br></br>
+          <div className="form-title-signup">
+            <big className="welcome-title-signup">Become a fellow thrillist!</big>
+          </div>
 
           {this.renderErrors()}
-
-        <div className="signup-form-input-container">
 
           <input
             type="text"
@@ -207,12 +207,15 @@ class SessionForm extends React.Component {
             type="submit" 
             value={this.props.formType} 
           />
-        </div>
 
-        <div className="signup-navigation-container">
-          <span className="signup-navigation-span">Already a thrillist?</span>
-          {this.props.otherForm}
+          <br></br>
+
+          <div className="signup-navigation-container">
+            <span className="signup-navigation-span">Already a thrillist?</span>
+            {this.props.otherForm}
+          </div>
         </div>
+        
       </form>)
 
     const form = (this.props.formType === "login" ? login : signup)

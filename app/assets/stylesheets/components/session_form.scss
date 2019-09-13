@@ -4,23 +4,21 @@
   align-items: center;
   height: 100%;
   width: 100%;
-  
+  box-sizing: border-box;
   
   .login-form {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 5%;
-    height: 45vh;
-    min-height: 184px;
-    width: 32vw;
-    min-width: 181px;
+    padding: 0%;
+    height: 100%;
+    width: 102%;
     
     .form-title {
       height: 5vh;
       min-height: 47px;
-      width: 18vw;
+      width: 95%;
       min-width: 186px;
       display: flex;
       justify-content: center;
@@ -38,7 +36,7 @@
     .form-title-signup {
       height: 5vh;
       min-height: 47px;
-      width: 18vw;
+      width: 95%;
       min-width: 186px;
       display: flex;
       justify-content: center;
@@ -57,18 +55,19 @@
     .login-form-input-container {
       height: 35vh;
       min-height: 47px;
-      width: 18vw;
+      width: 95%;
       min-width: 186px;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
+
     }
 
     .signup-form-input-container {
       height: 35vh;
       min-height: 47px;
-      width: 18vw;
+      width: 95%;
       min-width: 186px;
       display: flex;
       justify-content: center;
@@ -77,10 +76,8 @@
     }
 
     .demo-button {
-      height: 6vh;
-      min-height: 25px;
-      width: 18vw;;
-      min-width: 50px;
+      padding: 13px 0px;
+      width: 95%;
       text-align: center;
       border: solid #3B5998 1px;
       background-color: #3B5998;
@@ -94,9 +91,10 @@
       color: #808483;
       height: 6vh;
       min-height: 25px;
-      width: 18vw;;
+      width: 95%;
       min-width: 50px;
       text-align: center;
+      padding: 23px;
     }
 
     .signup-input {
@@ -105,7 +103,7 @@
       color: #808483;
       height: 6vh;
       min-height: 25px;
-      width: 18vw;;
+      width: 95%;
       min-width: 50px;
       text-align: center;
       margin: 1%;
@@ -117,7 +115,7 @@
       color: #808483;
       height: 6vh;
       min-height: 25px;
-      width: 18vw;;
+      width: 95%;
       min-width: 50px;
       text-align: center;
     }
@@ -126,27 +124,25 @@
       border: solid #3CC69E 1px;
       background-color: #3CC69E;
       color: #FFFFFF;
-      height: 6vh;
-      min-height: 25px;
-      width: 18vw;;
-      min-width: 50px;
+      width: 95%;
       text-align: center;
+      padding: 12px;
       margin-bottom: 2%;
     }
 
     .login-navigation-container {
       display: flex;
       justify-content: space-around;
-      width: 18vw;
+      width: 95%;
 
       .login-navigation-span {
-        font-size: 10px;
+        font-size: 12px;
         text-align: center;
       }
     }
 
     .otherFormBtn {
-      font-size: 10px;
+      font-size: 12px;
       text-align: center;
       position: relative;
     }
@@ -173,22 +169,30 @@
     .signup-navigation-container { 
       display: flex;
       justify-content: space-around;
-      width: 18vw;
+      width: 95%;
       
       .signup-navigation-span {
-        font-size: 10px;
+        font-size: 12px;
         text-align: center;
       }
     }
 
+    .spacer-container {
+      height: 22px;
+      width: 300px;
+      border-top: solid 1px #ebebeb;
+      margin: 2% 0%;
 
-    .spacer {    
-      font-family: $navbarFont;
-      font-size: 15px;
-      height: 1vh;
-      margin-bottom: 5%;
-      margin-top: -4%;
+      .spacer {    
+        font-family: $navbarFont;
+        font-size: 15px;
+        text-align: center;
+        padding: 2px 9px;
+        color: rgb(117,117,117);
+      }
+
     }
+
 
     .errors {
       color:red;

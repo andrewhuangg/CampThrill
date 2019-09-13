@@ -302,11 +302,18 @@ var Greeting = function Greeting(_ref) {
   var currentUser = _ref.currentUser,
       logout = _ref.logout,
       openModal = _ref.openModal;
+  var heart_tent_gif = window.heart_tent_gif;
 
   var personalGreeting = function personalGreeting() {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Welcome to campThrill, ", currentUser.first_name, "!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-      onClick: logout
-    }, "Log out"));
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "logged-in-right-nav-bar"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      onClick: logout,
+      className: "heart-gif-button"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      src: heart_tent_gif,
+      className: "heart-gif"
+    })));
   };
 
   var sessionLinks = function sessionLinks() {
@@ -689,17 +696,19 @@ function (_React$Component) {
         className: "login-form",
         onSubmit: this.handleSubmit
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "login-form-input-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "form-title"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("big", {
         className: "welcome-title"
-      }, "Welcome back fellow thrillist!")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.renderErrors(), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "login-form-input-container"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      }, "Welcome back fellow thrillist!")), this.renderErrors(), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         className: "demo-button",
         onClick: this.handleDemo
-      }, "Demo Login"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+      }, "Demo Login"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("fieldset", {
+        className: "spacer-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("legend", {
         className: "spacer"
-      }, "or"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+      }, "or")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         type: "text",
         value: this.state.email,
         onChange: this.update("email"),
@@ -715,7 +724,7 @@ function (_React$Component) {
         className: "submit-button",
         type: "submit",
         value: this.props.formType
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "login-navigation-container"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "login-navigation-span"
@@ -724,12 +733,12 @@ function (_React$Component) {
         className: "login-form",
         onSubmit: this.handleSubmit
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "signup-form-input-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "form-title-signup"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("big", {
         className: "welcome-title-signup"
-      }, "Become a fellow thrillist!")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.renderErrors(), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "signup-form-input-container"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+      }, "Become a fellow thrillist!")), this.renderErrors(), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         type: "text",
         value: this.state.first_name,
         onChange: this.update("first_name"),
@@ -757,11 +766,11 @@ function (_React$Component) {
         className: "submit-button",
         type: "submit",
         value: this.props.formType
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "signup-navigation-container"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "signup-navigation-span"
-      }, "Already a thrillist?"), this.props.otherForm));
+      }, "Already a thrillist?"), this.props.otherForm)));
       var form = this.props.formType === "login" ? login : signup;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "login-form-container"

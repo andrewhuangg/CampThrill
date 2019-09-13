@@ -5,6 +5,7 @@
 
   .navbar-button {
     position: relative;
+    padding-bottom: 1px;
   }
 
   .navbar-button::after {
@@ -24,6 +25,24 @@
   .navbar-button:hover::after {
     transform: scaleX(1);
     transform-origin: left;
+  }
+
+}
+
+.logged-in-right-nav-bar {
+  display: flex;
+
+  .heart-gif-button {
+    background-blend-mode: overlay;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+
+      .heart-gif {
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+      }
   }
 
 }

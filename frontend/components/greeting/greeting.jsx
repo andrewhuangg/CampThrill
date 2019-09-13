@@ -2,10 +2,13 @@ import React from 'react';
 
 const Greeting = ({ currentUser, logout, openModal }) => {
 
+  const heart_tent_gif = window.heart_tent_gif;
+
   const personalGreeting = () => (
-    <div>
-      <h2>Welcome to campThrill, {currentUser.first_name}!</h2>
-      <button onClick={ logout }>Log out</button>
+    <div className="logged-in-right-nav-bar">
+      <button onClick={logout} className="heart-gif-button">
+        <img src={heart_tent_gif} className="heart-gif" />
+      </button>
     </div>
   );
 
