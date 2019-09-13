@@ -21,16 +21,34 @@ class SessionForm extends React.Component {
     this.props.processForm(user).then(this.props.closeModal);
   }
 
+
+
   renderErrors() {
-    return (
-      <ul>
-        {this.props.errors.map((error, i) => (
-          <li key={`errors - ${i}`}>
-            {error}
-          </li>
-        ))}
-      </ul>
-    );
+    if (this.props.formType === "login") {
+      return (
+        <div className="errors-login">
+          <ul>
+            {this.props.errors.map((error, i) => (
+              <li key={`errors - ${i}`}>
+                {error}
+              </li>
+            ))}
+          </ul>
+        </div>
+      );
+    } else {
+      return (
+        <div className="errors-signup">
+          <ul>
+            {this.props.errors.map((error, i) => (
+              <li key={`errors - ${i}`}>
+                {error}
+              </li>
+            ))}
+          </ul>
+        </div>
+      );
+    }
   }
 
   handleEmail(email) {
@@ -71,20 +89,6 @@ class SessionForm extends React.Component {
     }, 1600)
   }
 
-  renderErrors() {
-    return (
-      <div className="errors">
-        <ul>
-          {this.props.errors.map((error, i) => (
-            <li key={`errors - ${i}`}>
-              {error}
-            </li>
-          ))}
-        </ul>
-      </div>
-    );
-  }
-
   componentWillUnmount(){
     this.props.removeErrors();
   }
@@ -98,8 +102,6 @@ class SessionForm extends React.Component {
 
 
   render() {
-
-    // const loginType = (this.props.formType === "login" ? "signup" : "login")
     
     const login = 
       (<form className="login-form" onSubmit={this.handleSubmit}>
@@ -208,17 +210,16 @@ class SessionForm extends React.Component {
             value={this.props.formType} 
           />
 
-          <br></br>
-
           <div className="signup-navigation-container">
             <span className="signup-navigation-span">Already a thrillist?</span>
             {this.props.otherForm}
           </div>
+          
         </div>
-        
       </form>)
 
     const form = (this.props.formType === "login" ? login : signup)
+    
     return (
       <div className="login-form-container">
         { form }

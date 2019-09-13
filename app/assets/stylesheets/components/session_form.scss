@@ -34,14 +34,13 @@
     }
 
     .form-title-signup {
-      height: 5vh;
-      min-height: 47px;
+      height: 8%;
       width: 95%;
-      min-width: 186px;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      margin-top: 6px;
 
       .welcome-title-signup {
         font-size: 20px;
@@ -89,10 +88,8 @@
       border: solid black 1px;
       background-color: #f7faff;
       color: #808483;
-      height: 6vh;
-      min-height: 25px;
+      height: 15%;
       width: 95%;
-      min-width: 50px;
       text-align: center;
       padding: 23px;
     }
@@ -101,12 +98,11 @@
       border: solid black 1px;
       background-color: #f7faff;
       color: #808483;
-      height: 6vh;
-      min-height: 25px;
+      height: 15%;
       width: 95%;
-      min-width: 50px;
       text-align: center;
-      margin: 1%;
+      padding: 23px;
+
     }
 
     .email-input {
@@ -139,12 +135,20 @@
         font-size: 12px;
         text-align: center;
       }
+
     }
 
-    .otherFormBtn {
+    .otherFormBtn-login {
       font-size: 12px;
       text-align: center;
       position: relative;
+    }
+
+    .otherFormBtn-signup {
+      font-size: 12px;
+      text-align: center;
+      position: relative;
+      padding-top: 5px;
     }
 
     .otherFormBtn::after {
@@ -174,6 +178,7 @@
       .signup-navigation-span {
         font-size: 12px;
         text-align: center;
+        padding-top: 5px;
       }
     }
 
@@ -190,11 +195,9 @@
         padding: 2px 9px;
         color: rgb(117,117,117);
       }
-
     }
 
-
-    .errors {
+    .errors-login {
       color:red;
       font-size: 12px;
       display: flex;
@@ -203,6 +206,18 @@
       flex-direction: row;
       margin-bottom: 4%;
       text-align: center;
+    }
+
+    .errors-signup {
+      color:red;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      margin-bottom: 4%;
+      text-align: center;
+      font-size: 45%;
     }
 
   }

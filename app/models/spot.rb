@@ -20,7 +20,7 @@ class Spot < ApplicationRecord
 
   AMENITIES = [
     'campires', 'toilets', 'pets allowed', 'showers', 'wifi', 'grills', 'signage', 'zip line', 'swimming', 'pool', 'lake', 'water slide', 'fishing', 'kayaks', 'paddleboats', 'canoes', 'golf range', 'soccer field', 'basketball', 'volleyball sandpit', 'whitewater paddling', 'climbing', 'horseback riding', 'biking'
-  ].freeze
+  ].sort.freeze
 
   validates :amenities, inclusion: { in: AMENITIES,
     message: "%{value} is not a valid amenity" }
