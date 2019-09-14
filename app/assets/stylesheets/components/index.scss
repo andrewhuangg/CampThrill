@@ -1,0 +1,30 @@
+.spot-index-container {
+  border: solid purple;
+
+  .spot-index-body {
+    border: solid lime;
+
+
+    .index-item-container {
+      border: solid black;
+      max-width: 1080px;
+      margin: 0px auto;
+
+      .spot-ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+
+      .spot-item {
+        border: solid crimson;
+        height: 200px;
+        width: 200px;
+      }
+      
+    }
+  }
+
+}

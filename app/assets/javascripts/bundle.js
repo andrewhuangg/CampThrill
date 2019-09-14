@@ -328,7 +328,21 @@ var App = function App() {
     className: "hipcamp_logo"
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "right-nav"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_greeting_greeting_container__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_modal_modal__WEBPACK_IMPORTED_MODULE_3__["default"], null)))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_spots_spots_index_container__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_greeting_greeting_container__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_modal_modal__WEBPACK_IMPORTED_MODULE_3__["default"], null)))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "master-header-container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "header-container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "header-body"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+    className: "header-body-title"
+  }, "A home for thrill seekers"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "header-body-text"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    className: "header-body-h1"
+  }, "Book unique camping experiences on over 300,000 campsites, ranches, vineyards, public parks and more."))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "spot-index-container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, "i want to be the body", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_spots_spots_index_container__WEBPACK_IMPORTED_MODULE_2__["default"], null))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", {
     className: "footer"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
     className: "footer-main"
@@ -909,7 +923,9 @@ var SpotIndexItem = function SpotIndexItem(_ref) {
   var spot = _ref.spot;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "spot-item"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "i am a spot"));
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "i am a spot"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: spot.indexPhoto
+  }));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (SpotIndexItem);
@@ -970,14 +986,18 @@ function (_React$Component) {
     value: function render() {
       var spots = this.props.spots;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "spot-index-container"
+        className: "spot-index-body"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "index-item-container"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, spots.map(function (spot) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_spot_index_item__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+        className: "spot-ul"
+      }, spots.map(function (spot) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "spot-item"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_spot_index_item__WEBPACK_IMPORTED_MODULE_1__["default"], {
           key: spot.id,
           spot: spot
-        });
+        }));
       }))));
     }
   }]);

@@ -20,9 +20,10 @@
 @import './base/font.scss';
 
 //components
-@import './components//root.scss';
-@import './components/app.scss';
-@import './components/greeting.scss';
+@import './components/root.scss';
+@import './components/navbar.scss';
+@import './components/header.scss';
+@import './components/index.scss';
 @import './components/modal.scss';
 @import './components/session_form.scss';
 @import './components/footer.scss';

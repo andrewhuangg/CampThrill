@@ -2,31 +2,36 @@
 #
 # Table name: spots
 #
-#  id          :bigint           not null, primary key
-#  host_id     :integer          not null
-#  title       :string           not null
-#  description :text             not null
-#  price       :integer          not null
-#  lat         :float            not null
-#  lng         :float            not null
-#  group_size  :integer          not null
-#  amenities   :boolean          default(FALSE)
-#  created_at  :datetime         not null
-#  updated_at  :datetime         not null
+#  id           :bigint           not null, primary key
+#  host_id      :integer          not null
+#  title        :string           not null
+#  description  :text             not null
+#  price        :integer          not null
+#  lat          :float            not null
+#  lng          :float            not null
+#  group_size   :integer          not null
+#  created_at   :datetime         not null
+#  updated_at   :datetime         not null
+#  toilets      :boolean          not null
+#  pets_allowed :integer          not null
+#  showers      :boolean          not null
+#  grills       :boolean          not null
+#  signage      :boolean          not null
+#  campfires    :boolean          not null
 #
 
 class Spot < ApplicationRecord
   validates :title, :description, :price, :lat, :lng, :group_size, presence: true
+  validates :pets_allowed, inclusion: { in: [ 0, 1, 2, 3] }
 
-  AMENITIES = [
-    'campires', 'toilets', 'pets allowed', 'showers', 'wifi', 'grills', 'signage', 'zip line', 'swimming', 'pool', 'lake', 'water slide', 'fishing', 'kayaks', 'paddleboats', 'canoes', 'golf range', 'soccer field', 'basketball', 'volleyball sandpit', 'whitewater paddling', 'climbing', 'horseback riding', 'biking'
-  ].sort.freeze
-
-  validates :amenities, inclusion: { in: AMENITIES,
-    message: "%{value} is not a valid amenity" }
+  validates :campfires, :toilets, :showers, :grills, :signage, inclusion: { in: [ true, false ]}
 
   belongs_to :user,
   foreign_key: :host_id,
   class_name: :User
+
+  has_one_attached :photo
+  has_many_attached :photos
+  
   
 end

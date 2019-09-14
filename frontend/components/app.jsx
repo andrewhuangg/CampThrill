@@ -20,7 +20,6 @@ const App = () => {
           <div className="left-nav">
             <img src={hipcamp_logo} className="hipcamp_logo" />
           </div>
-
           <div className="right-nav">
             <GreetingContainer />
             <Modal />
@@ -28,7 +27,23 @@ const App = () => {
         </nav>
       </div>
 
-      <SpotContainer />
+      <div className="master-header-container">
+        <div className="header-container">
+          <div className="header-body">
+            <h2 className="header-body-title">A home for thrill seekers</h2>
+
+            <div className="header-body-text">
+              <h1 className="header-body-h1">Book unique camping experiences on over 300,000 campsites, ranches, vineyards, public parks and more.</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div className="spot-index-container">
+      <section>i want to be the body
+        <SpotContainer />
+      </section>
+    </div>
 
       <footer className="footer">
         <section className="footer-main">

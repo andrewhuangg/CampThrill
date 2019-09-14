@@ -1,38 +1,6 @@
-.master-nav-container{
-
-  .nav-main-container {
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    width: 100%;
-    height: 8%;
-
-
-    .left-nav {
-      width: 50%;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      font-size: $navbarFontSize;
-      font-family: $navbarFont;
-      color: $navbarFontColor;
-      padding: 0px 29px;
-
-      .hipcamp_logo {
-        width: 15vw;    }
-
-    }
-
-    .right-nav {
-      width: 50%;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      font-size: $navbarFontSize;
-      font-family: $navbarFont;
-      color: $navbarFontColor;
-      padding: 0px 20px 0px 6px;
-    }
-  }
-
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
 }
