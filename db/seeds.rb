@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 require 'open-uri'
-
+ActiveRecord::Base.transaction do
 
 ## DEMO USER
 User.destroy_all
@@ -106,12 +106,10 @@ spot_5 = Spot.create!(
   pets_allowed: 1
 )
 
-# file = open()
 
-Spot.all.each.with_index do |spot, idx|
+Spot.all.each_with_index do |spot, idx|
   index_url = "https://campthrill-seed.s3-us-west-1.amazonaws.com/"
 
-  
   spot_idx = idx + 1
 
   file_title = "#{spot.title}#{spot_idx}"
@@ -129,3 +127,5 @@ end
 # grabbed spot seed and added 1
 # open(url of photo on aws) - convets url to file so heroku reads it
 # spot.photo.attach (io files, filename: what we want to name our file) and assigned file to the file we made 
+
+end
