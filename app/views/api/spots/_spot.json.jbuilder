@@ -16,6 +16,6 @@ json.set! spot.id do
   json.grills spot.grills
   json.signage spot.signage
   json.indexPhoto url_for(spot.photo)
-
-
+  json.showPhotos url_for(@spot.photos)
+  
 end

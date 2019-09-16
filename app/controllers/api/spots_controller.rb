@@ -6,8 +6,8 @@ class Api::SpotsController < ApplicationController
 
 
   def show
-    @spot = Spot.find(params[:id])
-    render 'api/users/show'
+    @spot = Spot.with_attached_photos.find(params[:id])
+    render 'api/spots/show'
   end
 
 end

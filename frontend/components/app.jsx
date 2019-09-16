@@ -1,6 +1,7 @@
 import React from 'react';
 import GreetingContainer from './greeting/greeting_container';
 import SpotContainer from './spots/spots_index_container';
+import SpotShowContainer from './spots/spot_show/spot_show_container';
 import Modal from './modal/modal';
 import { 
   Route, 
@@ -42,6 +43,7 @@ const App = () => {
 
         <div className="spot-index-container">
           <section className="spot-index-container-section">i want to be the body
+            <Route exact path="/spots/:spotId" component={SpotShowContainer} />
             <SpotContainer />
           </section>
         </div>
