@@ -15,7 +15,6 @@ class SpotShow extends React.Component {
   }
 
   render() {
-    debugger;
     return(
       <div className = "main-show-container" >
         <header className="show-header-container">
