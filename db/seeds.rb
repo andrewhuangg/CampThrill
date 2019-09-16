@@ -14,7 +14,6 @@ User.destroy_all
 User.connection.execute('ALTER SEQUENCE users_id_seq RESTART WITH 1')
 
 user_demo = User.create!(
-  id: 1,
   email: "mamba@lakers.com",
   password: "lakers24",
   first_name: "kobe",
