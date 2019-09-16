@@ -28,11 +28,3 @@
 
 
 end
-
-#looped through all spots
-
-=begin
-  what above code does
-  json.<variableName> - sets a key name
-  url_for(attach photo for heroku and db)
-=end
