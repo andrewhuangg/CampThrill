@@ -111,7 +111,7 @@ Spot.all.each_with_index do |spot, idx|
 
   spot_idx = idx + 1
 
-  file_title = "#{spot.title}#{spot_idx}"
+  file_title = "#{spot_idx}" + ".jpg"
   
   new_url = index_url + "#{spot_idx}" + ".jpg"
   
