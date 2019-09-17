@@ -8,7 +8,7 @@ class SpotIndex extends React.Component {
   }
 
   render() {
-    const { spots } = this.props;
+    const { spots, ownProps } = this.props;
     return (
       <div className="spot-index-body">
         <div className="index-item-container">
@@ -17,6 +17,8 @@ class SpotIndex extends React.Component {
               <div className="spot-item-container" key={spot.id}>
                 <SpotIndexItem 
                   spot={spot}
+                  ownProps={ownProps}
+                  title={spot.title}
                 />
               </div>
             )}

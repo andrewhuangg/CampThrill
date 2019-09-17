@@ -1,0 +1,83 @@
+.carousel-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
+  border: solid black;
+  position: relative;
+  justify-content: center;
+  box-sizing: border-box;
+
+
+  .carousel-main-container {
+    border: solid blue;
+    box-sizing: border-box;
+    height: 100%;
+    widows: 100%;
+    display: flex;
+    justify-content: center;
+
+    .carousel-inner-container {
+      border: solid yellow;
+      display: flex;
+      height: 100%;
+      box-sizing: border-box;
+      justify-content: center;
+      
+      .carousel-slide {
+        display:flex;
+        width: 100%;
+        height: 100%;
+        border: solid limegreen;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .carousel-photo {
+          border: solid limegreen;
+          margin: 0% 1%;
+          width: 40%;
+          height: 100%;
+        }
+
+        .lastClone {
+          border: solid limegreen;
+          width: 40%;
+          height: 100%;
+        }
+
+        .firstClone {
+          border: solid limegreen;
+          width: 40%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+
+  .prevBtn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    left: 5%;
+    font-size: 30px;
+    color: gray;
+    cursor: pointer;
+    opacity: 0.4;
+  }
+
+  .nextBtn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    right: 5%;
+    font-size: 30px;
+    color: gray;
+    cursor: pointer;
+    opacity: 0.4;
+  }
+
+
+
+}

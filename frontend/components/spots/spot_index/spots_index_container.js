@@ -1,10 +1,11 @@
 import { connect } from 'react-redux';
 import SpotIndex from './spots_index';
-import { fetchSpots } from '../../actions/spot_actions';
+import { fetchSpots } from '../../../actions/spot_actions';
 
-const mapStateToProps = ({ entities: { spots }}) => {
+const mapStateToProps = ({ entities: { spots }}, ownProps) => {
   return {
-    spots: Object.values(spots)
+    spots: Object.values(spots),
+    ownProps
   };
 };
 

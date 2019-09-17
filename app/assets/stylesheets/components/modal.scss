@@ -2,7 +2,7 @@
   position: fixed;
   display: flex;
   justify-content: center;
-  top: 10%;
+  top: 0;
   bottom: 0;
   right: 0;
   left: 0;
@@ -13,10 +13,9 @@
 
 .modal-child {
   border: 1px solid gray;
-  height: 402px;
+  height: 410px;
   width: 318px;
-  // height: 51%;
-  // width: 17%;
+  margin-top: 5%;
   animation: drop 2s ease;
   box-shadow: 0px 1px 5px 2px #e3e3e3;
   border-color: #ffffff;

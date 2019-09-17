@@ -1,4 +1,6 @@
 .footer {
+  margin-top: 10%;
+  position: relative;
 
    .footer-main {
     width: 100%;
@@ -16,6 +18,7 @@
     position: relative;
     border: solid red;
     box-sizing: border-box;
+    position: relative;
 
     .footer-description-container {
       display: flex;
