@@ -25,13 +25,13 @@ const Footer = () => {
             <div className="footer-social">
               <div className="footer-social-title">Social</div>
               <div className="footer-social-github">
-                <a href="https://github.com/andrewhuangg" className="footer-social-github-link">
-                  <i className="fab fa-github">Github</i>
+                <i class="fab fa-github"></i>
+                <a href="https://github.com/andrewhuangg" className="footer-social-github-link">Github
                 </a>
               </div>
               <div className="footer-social-linkedin">
-                <a href="https://www.linkedin.com/in/anuhangg/">
-                  <i className="fab fa-linkedin-in">Linkedin</i>
+                <i class="fab fa-linkedin-in"></i>
+                <a href="https://www.linkedin.com/in/anuhangg/" className="footer-social-linkedin-link">Linkedin
                 </a>
               </div>
             </div>

@@ -114,11 +114,11 @@ class Carousel extends React.Component {
         </div>
 
         <button className="prevBtn" onClick={this.handlePreviousPhoto}>
-          <i className="fas fa-angle-left"></i>
+          <i class="fas fa-angle-left"></i>
         
         </button>
         <button className="nextBtn" onClick={this.handleNextPhoto}>
-          <i className="fas fa-angle-right"></i>
+          <i class="fas fa-angle-right"></i>
         </button>
         
       </div>

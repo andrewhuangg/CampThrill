@@ -1,34 +1,131 @@
 .spotshow-master-container {
   width: 100%;
   margin: 0px auto;
-  
-  .top-level-show-container {
+
+  .spot-show-container {
+    border: solid blue;
+    height: 100%;
     width: 100%;
     display: flex;
-    box-sizing: border-box;
     flex-direction: column;
     align-items: center;
 
-    .main-show-container {
-      height: 450px;
-      border: solid orange;
+    
+    .top-level-show-container {
+      width: 100%;
       display: flex;
-      align-items: center;
       box-sizing: border-box;
       flex-direction: column;
-      width: 100%;
-      
-
-      .show-header-container {
-        width: 100%;
-        border: solid black;
-        display: flex;
-        justify-content: center;
+      align-items: center;
+      height: 100%;
+  
+      .main-show-container {
         height: 100%;
+        border: solid orange;
+        display: flex;
+        align-items: center;
         box-sizing: border-box;
+        flex-direction: column;
+        width: 100%;
+        
+  
+        .show-header-container {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          height: 100%;
+          box-sizing: border-box;
+          flex-direction: column;
+          align-items: center;
+          border: solid brown;
+            
+        }
+
+        .show-content-main-container {
+          border: solid yellow;
+          width: 1080px;
+
+
+
+          .show-content {
+            border: solid gray;
+            width: 100%;
+            height: 100%;
+
+            .content {
+              border: solid blue;
+
+              .content-header {
+                width: 66.66%;
+                border: solid green;
+                font-size: 20px;
+                font-family: $navbarFont;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                font-weight: 500;
+                font-size: 35px;
+              }
+
+              .content-list {
+                border: solid red;
+                margin: 10px 0;
+                width: 66.66%;
+
+                .nearby {
+                  border: solid limegreen;
+                  font-weight: 500;
+                  width: 66.66%;
+                  font-family: $navbarFont;
+                  margin-top: 10px;
+                  margin-bottom: 10px;
+                  font-size: 20px;
+                }
+              }
+            }
+          }
+        }
       }
-      
+    }
+
+    .show-listing-container {
+      width: 100%;
+      border: solid black;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      .show-listing {
+        width: 1080px;
+        border: solid red;
+        margin: 0 auto;
+
+        .show-listing-row {
+          border: solid blue;
+
+          .show-listing-column {
+            border: solid green;
+            width: 66.66%;
+            display: flex;
+            flex-direction: column;
+
+            .overview {
+              border: solid purple;
+              padding-top: 20px;
+
+              .overview-header {
+                border: solid limegreen;
+              }
+
+              .overview-cards {
+                border: solid orange;
+
+              }
+            }
+          }
+        }
+      }
     }
 
   }
+
 }

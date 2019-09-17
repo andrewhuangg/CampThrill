@@ -21,11 +21,13 @@ class SpotIndexItem extends React.Component {
         <img src={spot.indexPhoto} className="spot-img" onClick={this.handleClick}/>
         <figcaption className="spot-item-figcaption-container">
           <div className="link-content-container">
-            <h3 className="spot-item-link" onClick={this.handleClick}>
-              {title}
-              <img src={tent_avatar} className="tent_avatar" />
-            </h3>
-            <p className="spot-item-header-p">{Math.floor(Math.random() * (Math.floor(101) - Math.ceil(50))) + Math.ceil(50)}</p>
+            <div className="spot-item-title-container">
+              <h3 className="spot-item-link" onClick={this.handleClick}>
+                {title}
+              </h3>
+                <img src={tent_avatar} className="tent_avatar" />
+            </div>
+            <p className="spot-item-header-p"></p>
           </div>
         </figcaption>
       </div>

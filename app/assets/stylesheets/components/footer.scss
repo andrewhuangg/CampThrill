@@ -16,7 +16,6 @@
     justify-content: center;
     align-items: flex-start;
     position: relative;
-    border: solid red;
     box-sizing: border-box;
     position: relative;
 
@@ -24,17 +23,14 @@
       display: flex;
       justify-content: center;
       padding: 50px 25px;
-      border: solid yellow;
 
       .footer-description {
-        border: solid red;
         display: flex;
         flex-direction: column;
         width: 50%;
         margin-right: 3%;
 
         .footer-description-text-title {
-          border: solid blue;
           width: 100%;
           margin-bottom: 3%;
 
@@ -45,13 +41,11 @@
 
           .footer-description-text-h3 {
             font-size: 15px;
-            color: #70539f;
           }
 
         }
   
         .footer-description-text-body {
-          border: solid green;
           margin-bottom: 3%;
           width: 80%;
           
@@ -70,33 +64,36 @@
     }
 
     .footer-social-container {
-      border: solid red;
       width: 13%;
 
       .footer-social {
-        border: solid blue;
         height: 100%;
         width: 100%;
         display: flex;
         flex-direction: column;
 
         .footer-social-title {
-          border: solid yellow;
           font-size: 15px;
           color: #70539f;
           margin-bottom: 15px;
         }
 
         .footer-social-github {
-          border: solid orange;
           margin-bottom: 15px;
           color: rgba(255, 255, 255, 255);
+
+          .footer-social-github-link {
+            padding-left: 5px;
+          }
         }
 
         .footer-social-linkedin {
-          border: solid green;
           margin-bottom: 15px;
           color: rgba(255, 255, 255, 255);
+
+          .footer-social-linkedin-link {
+            padding-left: 5px;
+          }
         }
 
       }

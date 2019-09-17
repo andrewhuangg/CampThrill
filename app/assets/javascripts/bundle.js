@@ -942,18 +942,19 @@ var Footer = function Footer() {
     className: "footer-social-title"
   }, "Social"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "footer-social-github"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    "class": "fab fa-github"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "https://github.com/andrewhuangg",
     className: "footer-social-github-link"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fab fa-github"
-  }, "Github"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Github")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "footer-social-linkedin"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "https://www.linkedin.com/in/anuhangg/"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fab fa-linkedin-in"
-  }, "Linkedin"))))))));
+    "class": "fab fa-linkedin-in"
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "https://www.linkedin.com/in/anuhangg/",
+    className: "footer-social-linkedin-link"
+  }, "Linkedin")))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Footer);
@@ -986,7 +987,7 @@ var Header = function Header() {
     className: "header-body-text"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     className: "header-body-h1"
-  }, "Book unique camping experiences on over 300,000 campsites, ranches, vineyards, public parks and more."))));
+  }, "Book unique camping experiences on over ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, "300,000"), " campsites, ranches, vineyards, public parks and more."))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
@@ -1199,12 +1200,12 @@ function (_React$Component) {
         className: "prevBtn",
         onClick: this.handlePreviousPhoto
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "fas fa-angle-left"
+        "class": "fas fa-angle-left"
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         className: "nextBtn",
         onClick: this.handleNextPhoto
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "fas fa-angle-right"
+        "class": "fas fa-angle-right"
       })));
     }
   }]);
@@ -1320,15 +1321,17 @@ function (_React$Component) {
         className: "spot-item-figcaption-container"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "link-content-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "spot-item-title-container"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
         className: "spot-item-link",
         onClick: this.handleClick
-      }, title, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      }, title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         src: tent_avatar,
         className: "tent_avatar"
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "spot-item-header-p"
-      }, Math.floor(Math.random() * (Math.floor(101) - Math.ceil(50))) + Math.ceil(50)))));
+      }))));
     }
   }]);
 
@@ -1516,6 +1519,8 @@ function (_React$Component) {
     value: function render() {
       if (!this.props.spot) return null;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "spot-show-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "top-level-show-container"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "main-show-container"
@@ -1531,7 +1536,29 @@ function (_React$Component) {
         className: "show-content-container"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "show-content"
-      }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "hello"));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "content"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+        className: "content-header"
+      }, "Pack Your Essentails, And Let's Goo!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "content-list"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "nearby"
+      }, "Nearby: "), "Your dream camping trip.")))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "show-listing-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "show-listing"
+      }, "show listing", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "show-listing-row"
+      }, "show listing row", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "show-listing-column"
+      }, "show listing column", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+        className: "overview"
+      }, "overview", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        clasName: "overview-header"
+      }, "overview header"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "overview-cards"
+      }, "overview cards")))))));
     }
   }]);
 
