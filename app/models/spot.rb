@@ -30,7 +30,8 @@
 #
 
 class Spot < ApplicationRecord
-  validates :title, :description, :price, :lat, :lng, :group_size, :sites, presence: true
+  validates :title, :description, :price, :lat, :lng, :group_size, :sites, :activities, presence: true
+
   validates :pets_allowed, inclusion: { in: [ 0, 1, 2, 3] }
 
   validates :campfires, :toilets, :showers, :grills, :signage, :tents, :cabins, :parking, :wifi, :picnic, :portable_water, :trash_bins, inclusion: { in: [ true, false ] }

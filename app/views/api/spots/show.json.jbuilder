@@ -16,6 +16,14 @@ json.set! @spot.id do
   json.showers @spot.showers
   json.grills @spot.grills
   json.signage @spot.signage
+  json.tents @spot.tents
+  json.cabins @spot.cabins
+  json.parking @spot.parking
+  json.wifi @spot.wifi
+  json.picnic @spot.picnic
+  json.portable_water @spot.portable_water
+  json.trash_bins @spot.trash_bins
+  json.activities @spot.activities
   json.showPhotos @spot.photos.attached? ? @spot.photos.map { |url| url_for(url) } : []
 
 end

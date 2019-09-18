@@ -9,13 +9,21 @@ json.set! spot.id do
   json.lat spot.lat
   json.lng spot.lng
   json.group_size spot.group_size
-  json.campires spot.campires
+  json.campfires spot.campires
   json.toilets spot.toilets
   json.pets_allowed spot.pets_allowed
   json.showers spot.showers
   json.grills spot.grills
   json.signage spot.signage
+  json.tents spot.tents
+  json.cabins spot.cabins
+  json.parking spot.parking
+  json.wifi spot.wifi
+  json.picnic spot.picnic
+  json.portable_water spot.portable_water
+  json.trash_bins spot.trash_bins
+  json.activities spot.activities
   json.indexPhoto url_for(spot.photo)
-  json.showPhotos url_for(@spot.photos)
+  json.showPhotos url_for(spot.photos)
   
 end

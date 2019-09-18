@@ -21,8 +21,15 @@
     json.showers spot.showers
     json.grills spot.grills
     json.signage spot.signage
+    json.tents spot.tents
+    json.cabins spot.cabins
+    json.parking spot.parking
+    json.wifi spot.wifi
+    json.picnic spot.picnic
+    json.portable_water spot.portable_water
+    json.trash_bins spot.trash_bins
+    json.activities spot.activities
     json.indexPhoto url_for(spot.photo)
-
 
   end
 

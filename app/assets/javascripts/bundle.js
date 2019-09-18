@@ -1485,70 +1485,127 @@ var SpotCards = function SpotCards(props) {
     className: "cards-header"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Amenities")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "cards-filter"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "amenities-cards-info-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "cards-img",
     src: window.water
-  }), "\xA0", spot.portable_water ? "Portable water available" : "Portable water not available"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "amenities-cards-span"
+  }, spot.portable_water ? "Portable water available" : "Portable water not available"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "cards-filter"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "amenities-cards-info-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "cards-img",
     src: window.cabin
-  }), "\xA0", spot.cabins ? "Cabins available" : "Cabins not available"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "amenities-cards-span"
+  }, spot.cabins ? "Cabins available" : "Cabins not available"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "cards-filter"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "amenities-cards-info-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "cards-img",
     src: window.toilet
-  }), "\xA0", spot.toilets ? "Toilets available" : "Toilets not available"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "amenities-cards-span"
+  }, spot.toilets ? "Toilets available" : "Toilets not available"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "cards-filter"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "amenities-cards-info-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "cards-img",
     src: window.shower
-  }), "\xA0", spot.showers ? "Showers available" : "Showers not available"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "amenities-cards-span"
+  }, spot.showers ? "Showers available" : "Showers not available"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "cards-filter"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "amenities-cards-info-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "cards-img",
     src: window.grill
-  }), "\xA0", spot.grills ? "Grills available" : "Grills not available"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "amenities-cards-span"
+  }, spot.grills ? "Grills available" : "Grills not available"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "cards-filter"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "amenities-cards-info-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "cards-img",
     src: window.signage
-  }), "\xA0", spot.signage ? "Signage available" : "Signage not available"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "amenities-cards-span"
+  }, spot.signage ? "Signage available" : "Signage not available"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "cards-filter"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "amenities-cards-info-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "cards-img",
     src: window.tent
-  }), "\xA0", spot.tents ? "Tents available" : "Tents not available"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "amenities-cards-span"
+  }, spot.tents ? "Tents available" : "Tents not available"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "cards-filter"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "amenities-cards-info-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "cards-img",
     src: window.parking
-  }), "\xA0", spot.parking ? "Parking available" : "Parking not available"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "amenities-cards-span"
+  }, spot.parking ? "Parking available" : "Parking not available"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "cards-filter"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "amenities-cards-info-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "cards-img",
     src: window.wifi
-  }), "\xA0", spot.wifi ? "Wifi available" : "Wifi not available"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "amenities-cards-span"
+  }, spot.wifi ? "Wifi available" : "Wifi not available"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "cards-filter"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "amenities-cards-info-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "cards-img",
     src: window.picnic
-  }), "\xA0", spot.picnic ? "Picnic available" : "Picnic not available"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "amenities-cards-span"
+  }, spot.picnic ? "Picnic available" : "Picnic not available"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "cards-filter"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "amenities-cards-info-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "cards-img",
     src: window.trash
-  }), "\xA0", spot.trash_bins ? "Trash bins available" : "Trash bins not available"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "amenities-cards-span"
+  }, spot.trash_bins ? "Trash bins available" : "Trash bins not available"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "cards-filter"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "amenities-cards-info-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "cards-img",
     src: window.campfire
-  }), "\xA0", spot.campfires ? "Campfires bins available" : "Campfires bins not available")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "amenities-cards-span"
+  }, spot.campfires ? "Campfires bins available" : "Campfires bins not available")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "cards"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "cards-header"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Activities")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "cards-filter"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Activities")), spot.activities.map(function (activity, idx) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "cards-filter"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "activities-cards-info-container"
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      className: "cards-img",
+      src: window[activity]
+    }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      className: "activities-cards-span"
+    }, "".concat(activity, " is available"))));
   }))));
 };
 
