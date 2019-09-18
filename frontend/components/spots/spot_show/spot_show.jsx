@@ -13,7 +13,6 @@ class SpotShow extends React.Component {
 
   render() {
     if (!this.props.spot) return null;
-    const { spot } = this.props.spot
 
     return(
       <div className="spot-show-container">
@@ -28,7 +27,7 @@ class SpotShow extends React.Component {
                 <div className="show-content-container">
                   <div className="show-content">
                     <div className="content">
-                      {/* will render spot details component here */}
+                      {/* header info */}
                       <h1 className="content-header">{this.props.spot.title}</h1>
                       <div className="content-list">
                         <span className="nearby">Nearby: </span>
@@ -51,11 +50,17 @@ class SpotShow extends React.Component {
                 spot column
                 <section className="overview">
                   overview
-                  <div clasName="overview-header">
-                    overview header
+                  <div className="overview-header">
+                    {/* will render spot details component here */}
                   </div>
                   <div className="overview-cards">
-                    <SpotCards spot={spot} />
+                    <SpotCards spot={this.props.spot} />
+                  </div>
+                  <div className="overview-details">
+                    {/* dails */}
+                  </div>
+                  <div className="overview-activities">
+                    {/* activities */}
                   </div>
                 </section>
               </div>

@@ -945,14 +945,14 @@ var Footer = function Footer() {
   }, "Social"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "footer-social-github"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    "class": "fab fa-github"
+    className: "fab fa-github"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "https://github.com/andrewhuangg",
     className: "footer-social-github-link"
   }, "Github")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "footer-social-linkedin"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    "class": "fab fa-linkedin-in"
+    className: "fab fa-linkedin-in"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "https://www.linkedin.com/in/anuhangg/",
     className: "footer-social-linkedin-link"
@@ -1054,6 +1054,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -1083,107 +1085,78 @@ function (_React$Component) {
     _classCallCheck(this, Carousel);
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(Carousel).call(this, props));
-    _this.handlePreviousPhoto = _this.handlePreviousPhoto.bind(_assertThisInitialized(_this));
-    _this.handleNextPhoto = _this.handleNextPhoto.bind(_assertThisInitialized(_this));
-    _this.handleTransitionEnd = _this.handleTransitionEnd.bind(_assertThisInitialized(_this));
     _this.state = {
       counter: 0
     };
+    _this.handlePreviousPhoto = _this.handlePreviousPhoto.bind(_assertThisInitialized(_this));
+    _this.handleNextPhoto = _this.handleNextPhoto.bind(_assertThisInitialized(_this));
     return _this;
   }
 
   _createClass(Carousel, [{
     key: "handlePreviousPhoto",
     value: function handlePreviousPhoto(e) {
-      var _this2 = this;
-
       e.preventDefault();
-      var carouselSlide = document.querySelector('.carousel-slide');
-      var carouselImages = document.getElementsByClassName('carousel-slide')[0].childNodes;
+      var carouselSlide = this.refs.carouselSlide;
+      var carouselImages = this.refs.carouselSlide.childNodes;
       var size = carouselImages[0].clientWidth;
-      this.setState({
-        counter: this.state.counter - 1
-      });
-      setTimeout(function () {
-        carouselSlide.style.transition = "transform 0.3s ease-in-out";
-        carouselSlide.style.transform = 'translateX(' + -size * _this2.state.counter + 'px)';
-      }, 0);
+      var that = this;
 
-      if (carouselImages[this.state.counter].className === "lastClone" && this.state.counter <= 0) {
-        carouselSlide.style.transition = "none";
+      if (this.state.counter <= 0) {
         this.setState({
-          counter: this.state.counter = carouselImages.length - 1
+          counter: carouselImages.length - 2
         });
-        carouselSlide.style.transform = 'translateX(' + -size * this.state.counter + 'px)';
+      } else {
+        this.setState({
+          counter: this.state.counter - 1
+        });
       }
+
+      setTimeout(function () {
+        if (carouselImages[that.state.counter].className === "lastClone") {
+          carouselSlide.style.transition = "none";
+          carouselSlide.style.transform = 'translateX(' + (-size * that.state.counter - 1) + 'px)';
+          that.setState({
+            counter: 7
+          });
+        } else {
+          carouselSlide.style.transform = 'translateX(' + -size * that.state.counter + 'px)';
+        }
+      }, 0);
     }
   }, {
     key: "handleNextPhoto",
     value: function handleNextPhoto(e) {
-      var _this3 = this;
-
       e.preventDefault();
-      var carouselSlide = document.querySelector('.carousel-slide');
-      var carouselImages = document.getElementsByClassName('carousel-slide')[0].childNodes;
+      var carouselSlide = this.refs.carouselSlide;
+      var carouselImages = this.refs.carouselSlide.childNodes;
       var size = carouselImages[0].clientWidth;
+      var that = this;
       this.setState({
         counter: this.state.counter + 1
       });
       setTimeout(function () {
-        carouselSlide.style.transition = "transform 0.3s ease-in-out";
-        carouselSlide.style.transform = 'translateX(' + -size * _this3.state.counter + 'px)';
+        if (carouselImages[that.state.counter].className === "firstClone") {
+          carouselSlide.style.transition = "none";
+          carouselSlide.style.transform = 'translateX(' + -size * 0 + 'px)';
+          that.setState({
+            counter: 0
+          });
+        } else {
+          carouselSlide.style.transform = 'translateX(' + -size * that.state.counter + 'px)';
+        }
       }, 0);
-
-      if (carouselImages[this.state.counter].className === "firstClone" && this.state.counter >= carouselImages.length - 1) {
-        carouselSlide.style.transition = "none";
-        this.setState({
-          counter: this.state.counter = 0
-        });
-        carouselSlide.style.transform = 'translateX(' + -size * this.state.counter + 'px)';
-      }
-    }
-  }, {
-    key: "handleTransitionEnd",
-    value: function handleTransitionEnd(e) {
-      var _this4 = this;
-
-      e.preventDefault();
-      var carouselImages = document.getElementsByClassName('carousel-slide')[0].childNodes;
-      var carouselSlide = document.querySelector('.carousel-slide');
-      var size = carouselImages[0].clientWidth;
-
-      if (carouselImages[this.state.counter].className === "firstClone") {
-        this.setState({
-          counter: 0
-        });
-        setTimeout(function () {
-          carouselSlide.style.transition = "transform 0.3s ease-in-out";
-          carouselSlide.style.transition = "none";
-          carouselSlide.style.transform = 'translateX(' + -size * _this4.state.counter + 'px)';
-        }, 0);
-      }
-
-      if (carouselImages[this.state.counter].className === "lastClone") {
-        this.setState({
-          counter: carouselImages.length - 1
-        });
-        setTimeout(function () {
-          carouselSlide.style.transition = "transform 0.3s ease-in-out";
-          carouselSlide.style.transition = "none";
-          carouselSlide.style.transform = 'translateX(' + -size * _this4.state.counter + 'px)';
-        }, 0);
-      }
     }
   }, {
     key: "render",
     value: function render() {
       if (!this.props.photos) return null;
       var photos = this.props.photos.map(function (photoUrl, idx) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", _defineProperty({
           src: photoUrl,
           key: idx,
           className: "carousel-photo"
-        });
+        }, "key", idx));
       });
       var firstImg = this.props.photos[0];
       var lastImg = this.props.photos[this.props.photos.length - 1];
@@ -1201,17 +1174,17 @@ function (_React$Component) {
         className: "carousel-inner-container"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "carousel-slide",
-        onTransitionEnd: this.handleTransitionEnd
+        ref: "carouselSlide"
       }, photos)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         className: "prevBtn",
         onClick: this.handlePreviousPhoto
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        "class": "fas fa-angle-left"
+        className: "fas fa-angle-left"
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         className: "nextBtn",
         onClick: this.handleNextPhoto
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        "class": "fas fa-angle-right"
+        className: "fas fa-angle-right"
       })));
     }
   }]);
@@ -1490,7 +1463,10 @@ var SpotCards = function SpotCards(props) {
     className: "cards-header"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Amenities")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "cards-filter"
-  }, "fdsgsdf"))));
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "cards-img",
+    src: spot.portable_water ? window.water : window.water
+  }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, spot.portable_water ? "Portable water available" : "Portable water not available", " ")))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (SpotCards);
@@ -1558,7 +1534,6 @@ function (_React$Component) {
     key: "render",
     value: function render() {
       if (!this.props.spot) return null;
-      var spot = this.props.spot.spot;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "spot-show-container"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1596,12 +1571,16 @@ function (_React$Component) {
       }, "spot column", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
         className: "overview"
       }, "overview", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        clasName: "overview-header"
-      }, "overview header"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "overview-header"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "overview-cards"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_spot_cards_info__WEBPACK_IMPORTED_MODULE_5__["default"], {
-        spot: spot
-      }))))))));
+        spot: this.props.spot
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "overview-details"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "overview-activities"
+      })))))));
     }
   }]);
 
@@ -31858,7 +31837,7 @@ function warning(message) {
 /*!***************************************************************!*\
   !*** ./node_modules/react-router-dom/esm/react-router-dom.js ***!
   \***************************************************************/
-/*! exports provided: BrowserRouter, HashRouter, Link, NavLink, MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext */
+/*! exports provided: MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext, BrowserRouter, HashRouter, Link, NavLink */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

@@ -26,12 +26,12 @@ const Footer = () => {
               <div className="footer-social">
                 <div className="footer-social-title">Social</div>
                 <div className="footer-social-github">
-                  <i class="fab fa-github"></i>
+                  <i className="fab fa-github"></i>
                   <a href="https://github.com/andrewhuangg" className="footer-social-github-link">Github
                   </a>
                 </div>
                 <div className="footer-social-linkedin">
-                  <i class="fab fa-linkedin-in"></i>
+                  <i className="fab fa-linkedin-in"></i>
                   <a href="https://www.linkedin.com/in/anuhangg/" className="footer-social-linkedin-link">Linkedin
                   </a>
                 </div>

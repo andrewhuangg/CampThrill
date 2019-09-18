@@ -5,98 +5,78 @@ class Carousel extends React.Component {
 
   constructor(props) {
     super(props);
-    
-    this.handlePreviousPhoto = this.handlePreviousPhoto.bind(this);
-    this.handleNextPhoto = this.handleNextPhoto.bind(this);
-    this.handleTransitionEnd = this.handleTransitionEnd.bind(this);
+
     this.state = {
       counter: 0
     };
+
+    this.handlePreviousPhoto = this.handlePreviousPhoto.bind(this);
+    this.handleNextPhoto = this.handleNextPhoto.bind(this);
   }
 
   handlePreviousPhoto(e) {
     e.preventDefault();
-    const carouselSlide = document.querySelector('.carousel-slide');
-    const carouselImages = document.getElementsByClassName('carousel-slide')[0].childNodes;
-    const size = carouselImages[0].clientWidth;
 
-    this.setState({
-      counter: this.state.counter - 1
-    });
+    const carouselSlide = this.refs.carouselSlide;
+    const carouselImages = this.refs.carouselSlide.childNodes;
+    const size = carouselImages[0].clientWidth;
+    let that = this;
+
+    if (this.state.counter <= 0) {
+      this.setState({
+        counter: carouselImages.length - 2
+      });
+    } else {
+      this.setState({
+        counter: this.state.counter - 1
+      });
+    }
 
     setTimeout(() => {
-      carouselSlide.style.transition = "transform 0.3s ease-in-out";
-      carouselSlide.style.transform = 'translateX(' + (-size * this.state.counter) + 'px)';
+      if ((carouselImages[that.state.counter].className === "lastClone")) {
+        carouselSlide.style.transition = "none";
+        carouselSlide.style.transform = 'translateX(' + (-size * that.state.counter - 1) + 'px)';
+        that.setState({
+          counter: 7
+        });
+      } else {
+        carouselSlide.style.transform = 'translateX(' + (-size * that.state.counter) + 'px)';
+      }
     }, 0);
-
-    if ((carouselImages[this.state.counter].className) === "lastClone" && this.state.counter <= 0) {
-      carouselSlide.style.transition = "none";
-      this.setState({
-        counter: this.state.counter = carouselImages.length - 1
-      });
-      carouselSlide.style.transform = 'translateX(' + (-size * this.state.counter) + 'px)';
-    }
 
   }
 
   handleNextPhoto(e) {
     e.preventDefault();
-    const carouselSlide = document.querySelector('.carousel-slide');
-    const carouselImages = document.getElementsByClassName('carousel-slide')[0].childNodes;
+    const carouselSlide = this.refs.carouselSlide;
+    const carouselImages = this.refs.carouselSlide.childNodes;
     const size = carouselImages[0].clientWidth;
+    let that = this;
 
     this.setState({
       counter: this.state.counter + 1
     });
 
     setTimeout(() => {
-      carouselSlide.style.transition = "transform 0.3s ease-in-out";
-      carouselSlide.style.transform = 'translateX(' + (-size * this.state.counter) + 'px)';
+      if ((carouselImages[that.state.counter].className) === "firstClone") {
+
+        carouselSlide.style.transition = "none";
+        carouselSlide.style.transform = 'translateX(' + (-size * 0) + 'px)';
+        that.setState({
+          counter: 0
+        });
+      } else {
+        carouselSlide.style.transform = 'translateX(' + (-size * that.state.counter) + 'px)';
+      }
     }, 0);
 
-    if ((carouselImages[this.state.counter].className) === "firstClone" && this.state.counter >= carouselImages.length - 1) {
-      carouselSlide.style.transition = "none";
-      this.setState({
-        counter: this.state.counter = 0
-      });
-      carouselSlide.style.transform = 'translateX(' + (-size * this.state.counter) + 'px)';
-    }
-  }
-
-  handleTransitionEnd(e) {
-    e.preventDefault();
-    const carouselImages = document.getElementsByClassName('carousel-slide')[0].childNodes;
-    const carouselSlide = document.querySelector('.carousel-slide');
-    const size = carouselImages[0].clientWidth;
-
-    if (carouselImages[this.state.counter].className === "firstClone") {
-      this.setState({
-        counter: 0
-      });
-      setTimeout(() => {
-        carouselSlide.style.transition = "transform 0.3s ease-in-out";
-        carouselSlide.style.transition = "none";
-        carouselSlide.style.transform = 'translateX(' + (-size * this.state.counter) + 'px)';
-      }, 0);
-    }
-
-    if (carouselImages[this.state.counter].className === "lastClone") {
-      this.setState({
-        counter: carouselImages.length - 1
-      });
-      setTimeout(() => {
-        carouselSlide.style.transition = "transform 0.3s ease-in-out";
-        carouselSlide.style.transition = "none";
-        carouselSlide.style.transform = 'translateX(' + (-size * this.state.counter) + 'px)';
-      }, 0);
-    }
   }
 
   render() {
     if (!this.props.photos) return null;
 
     const photos = this.props.photos.map((photoUrl, idx) => 
-      <img src={photoUrl} key={idx} className="carousel-photo" />
+      <img src={photoUrl} key={idx} className="carousel-photo" key={idx}/>
     )
 
 
@@ -108,17 +88,17 @@ class Carousel extends React.Component {
     return (
       <div className="carousel-main-container">
         <div className="carousel-inner-container">
-          <div className="carousel-slide" onTransitionEnd={this.handleTransitionEnd}>
+          <div className="carousel-slide" ref="carouselSlide">
             {photos}
           </div>
         </div>
 
         <button className="prevBtn" onClick={this.handlePreviousPhoto}>
-          <i class="fas fa-angle-left"></i>
-        
+          <i className="fas fa-angle-left"></i>
         </button>
+
         <button className="nextBtn" onClick={this.handleNextPhoto}>
-          <i class="fas fa-angle-right"></i>
+          <i className="fas fa-angle-right"></i>
         </button>
         
       </div>
