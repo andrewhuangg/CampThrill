@@ -4,6 +4,7 @@ import Carousel from '../carousel/carousel';
 import GreetingContainer from '../../greeting/greeting_container';
 import Modal from '../../modal/modal';
 import SpotCards from './spot_cards_info';
+import SpotActivities from './spot_activities';
 
 class SpotShow extends React.Component {
 
@@ -48,6 +49,7 @@ class SpotShow extends React.Component {
               show listing row
               <div className="show-listing-column">
                 spot column
+
                 <section className="overview">
                   overview
                   <div className="overview-header">
@@ -57,12 +59,13 @@ class SpotShow extends React.Component {
                     <SpotCards spot={this.props.spot} />
                   </div>
                   <div className="overview-details">
-                    {/* dails */}
+                    {/* details */}
                   </div>
                   <div className="overview-activities">
-                    {/* activities */}
+                    <SpotActivities spot={this.props.spot} />
                   </div>
                 </section>
+                
               </div>
             </div>
           </div>

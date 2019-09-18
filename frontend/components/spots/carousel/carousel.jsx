@@ -82,8 +82,8 @@ class Carousel extends React.Component {
 
     const firstImg = this.props.photos[0];
     const lastImg = this.props.photos[this.props.photos.length - 1];
-    photos.push(<img src={firstImg} className="firstClone" />);
-    photos.unshift(<img src={lastImg} className="lastClone" />);
+    photos.push(<img src={firstImg} className="firstClone" /> );
+    photos.unshift(<img src={lastImg} className="lastClone" /> );
 
     return (
       <div className="carousel-main-container">

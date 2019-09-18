@@ -46,7 +46,7 @@ require 'open-uri'
     picnic: false,
     portable_water: true,
     trash_bins: false,
-    activities: ['Biking', 'Hiking', 'Horseback ridng','Wildlife watching', 'Rock climbing']
+    activities: ['biking', 'hiking', 'horseback_riding','wildlife_watching', 'rock_climbing']
   )
 
   spot_2 = Spot.create!(
@@ -71,7 +71,7 @@ require 'open-uri'
     picnic: true,
     portable_water: true,
     trash_bins: false,
-    activities: ['Hiking', 'Wildlife watching', 'Base jumping', 'Rock climbing']
+    activities: ['hiking', 'wildlife_watching', 'base_jumping', 'rock_climbing']
   )
 
   spot_3 = Spot.create!(
@@ -96,7 +96,7 @@ require 'open-uri'
     picnic: false,
     portable_water: false,
     trash_bins: false,
-    activities: ['Hiking', 'Wildlife watching', 'Base jumping', 'Rock climbing']
+    activities: ['hiking', 'wildlife_watching', 'base_jumping', 'rock_climbing']
   )
 
   spot_4 = Spot.create!(
@@ -121,7 +121,7 @@ require 'open-uri'
     picnic: false,
     portable_water: true,
     trash_bins: false,
-    activities: ['Hiking', 'Horseback ridng', 'Wildlife watching']
+    activities: ['hiking', 'horseback_riding', 'wildlife_watching']
   )
 
   spot_5 = Spot.create!(
@@ -146,7 +146,7 @@ require 'open-uri'
     picnic: false,
     portable_water: true,
     trash_bins: true,
-    activities: ['Hiking', 'Paddling', 'Boating', 'Fishing', 'Swimming', 'Wildlife watching', 'Rock climbing']
+    activities: ['hiking', 'paddling', 'boating', 'fishing', 'swimming', 'wildlife_watching', 'rock_climbing']
   )
 
   spot_6 = Spot.create!(
@@ -171,7 +171,7 @@ require 'open-uri'
     picnic: false,
     portable_water: true,
     trash_bins: false,
-    activities: ['Biking', 'Hiking', 'Horseback ridng', 'Paddling', 'Surfing', 'Boating', 'Fishing', 'Wind sports', 'Swimming', 'Wildlife watching', 'Base jumping', 'Rock climbing']
+    activities: ['hiking', 'horseback_riding', 'wildlife_watching', 'rock_climbing']
   )
 
   spot_7 = Spot.create!(
@@ -196,7 +196,7 @@ require 'open-uri'
     picnic: true,
     portable_water: true,
     trash_bins: true,
-    activities: ['Hiking', 'Horseback ridng', 'Wildlife watching', 'Rock climbing']
+    activities: ['hiking', 'horseback_riding', 'wildlife_watching', 'rock_climbing']
   )
 
   spot_8 = Spot.create!(
@@ -221,13 +221,13 @@ require 'open-uri'
     picnic: true,
     portable_water: true,
     trash_bins: true,
-    activities: ['Hiking', 'Wildlife watching', 'Paddling', 'Swimming']
+    activities: ['hiking', 'wildlife_watching', 'paddling', 'swimming']
   )
 
   spot_9 = Spot.create!(
     host_id: user_demo.id,
     title: "Torres del Paine National Park",
-    description: "Torres del Paine National Park, in Chile’s Patagonia region, is known for its soaring mountains, bright blue icebergs that cleave from glaciers and golden pampas (grasslands) that shelter rare wildlife such as llama-like guanacos.",
+    description: "Torres del Paine National Park, in Chile’s Patagonia region, is known for its soaring mountains, bright blue icebergs that cleave from glaciers and golden pampas (grasslands) that shelter rare wildlife_such as llama-like guanacos.",
     price: 25,
     lat: -50.942818,
     lng: -73.406743,
@@ -246,7 +246,7 @@ require 'open-uri'
     picnic: false,
     portable_water: false,
     trash_bins: false,
-    activities: ['Hiking','Wildlife watching', 'Rock climbing']
+    activities: ['hiking','wildlife_watching', 'rock_climbing']
   )
 
   Spot.all.each_with_index do |spot, idx|

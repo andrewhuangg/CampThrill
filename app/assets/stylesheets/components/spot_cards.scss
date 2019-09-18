@@ -3,15 +3,17 @@
   justify-content: space-around;
   border: solid blue;
   
+  
   .spot-cards-container {
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
     width: 32%;
-    height: 300px;
     box-shadow: 0px 1px 1px 1px #e3e3e3;
+    border: solid palevioletred;
 
     .cards {
       margin-left: 1%;
+      border: solid lime;
 
       .cards-header {
         height: 50px;

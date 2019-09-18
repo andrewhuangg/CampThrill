@@ -42,7 +42,7 @@ const Footer = () => {
       </footer>
       <div className="footer-bottom-container">
         <div className="footer-bottom">
-          <p>Made in California.</p>
+          <p>Made in San Francisco.</p>
         </div>
       </div>
     </div>
