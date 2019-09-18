@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_13_233117) do
+ActiveRecord::Schema.define(version: 2019_09_18_123125) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -52,6 +52,15 @@ ActiveRecord::Schema.define(version: 2019_09_13_233117) do
     t.boolean "grills", null: false
     t.boolean "signage", null: false
     t.boolean "campfires", null: false
+    t.integer "sites"
+    t.boolean "tents", default: false, null: false
+    t.boolean "cabins", default: false, null: false
+    t.boolean "parking", default: false, null: false
+    t.boolean "wifi", default: false, null: false
+    t.boolean "picnic", default: false, null: false
+    t.boolean "portable_water", default: false, null: false
+    t.boolean "trash_bins", default: false, null: false
+    t.string "activities", default: [], array: true
     t.index ["host_id"], name: "index_spots_on_host_id"
   end
 

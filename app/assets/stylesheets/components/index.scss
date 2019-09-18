@@ -64,6 +64,7 @@
                 height: 90%;
                 border: 0;
                 box-sizing: border-box;
+                overflow: hidden;
               }
 
               .spot-item-figcaption-container {
@@ -76,6 +77,7 @@
                 align-items: flex-start;
                 flex-wrap: wrap;
                 background-color: #F9F9F9;
+                box-shadow: 1px 2px 2px 1px #e3e3e3;
                 
                 .link-content-container {
                   display: flex;

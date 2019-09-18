@@ -37,7 +37,16 @@ require 'open-uri'
     showers: false,
     grills: false,
     signage: true,
-    pets_allowed: 2
+    pets_allowed: 2,
+    sites: 4,
+    tents: true,
+    cabins: true,
+    parking: true,
+    wifi: false,
+    picnic: false,
+    portable_water: true,
+    trash_bins: false,
+    activities: ['Biking', 'Hiking', 'Horseback ridng','Wildlife watching', 'Rock climbing']
   )
 
   spot_2 = Spot.create!(
@@ -53,7 +62,16 @@ require 'open-uri'
     showers: false,
     grills: true,
     signage: true,
-    pets_allowed: 1
+    pets_allowed: 1,
+    sites: 6,
+    tents: true,
+    cabins: true,
+    parking: true,
+    wifi: false,
+    picnic: true,
+    portable_water: true,
+    trash_bins: false,
+    activities: ['Hiking', 'Wildlife watching', 'Base jumping', 'Rock climbing']
   )
 
   spot_3 = Spot.create!(
@@ -69,7 +87,16 @@ require 'open-uri'
     showers: false,
     grills: true,
     signage: false,
-    pets_allowed: 0
+    pets_allowed: 0,
+    sites: 0,
+    tents: true,
+    cabins: false,
+    parking: false,
+    wifi: false,
+    picnic: false,
+    portable_water: false,
+    trash_bins: false,
+    activities: ['Hiking', 'Wildlife watching', 'Base jumping', 'Rock climbing']
   )
 
   spot_4 = Spot.create!(
@@ -85,7 +112,16 @@ require 'open-uri'
     showers: false,
     grills: false,
     signage: true,
-    pets_allowed: 0
+    pets_allowed: 0,
+    sites: 2,
+    tents: true,
+    cabins: false,
+    parking: false,
+    wifi: false,
+    picnic: false,
+    portable_water: true,
+    trash_bins: false,
+    activities: ['Hiking', 'Horseback ridng', 'Wildlife watching']
   )
 
   spot_5 = Spot.create!(
@@ -101,7 +137,16 @@ require 'open-uri'
     showers: false,
     grills: false,
     signage: false,
-    pets_allowed: 1
+    pets_allowed: 1,
+    sites: 3,
+    tents: true,
+    cabins: true,
+    parking: true,
+    wifi: true,
+    picnic: false,
+    portable_water: true,
+    trash_bins: true,
+    activities: ['Hiking', 'Paddling', 'Boating', 'Fishing', 'Swimming', 'Wildlife watching', 'Rock climbing']
   )
 
   spot_6 = Spot.create!(
@@ -117,7 +162,16 @@ require 'open-uri'
     showers: false,
     grills: false,
     signage: false,
-    pets_allowed: 2
+    pets_allowed: 2,
+    sites: 6,
+    tents: true,
+    cabins: true,
+    parking: true,
+    wifi: false,
+    picnic: false,
+    portable_water: true,
+    trash_bins: false,
+    activities: ['Biking', 'Hiking', 'Horseback ridng', 'Paddling', 'Surfing', 'Boating', 'Fishing', 'Wind sports', 'Swimming', 'Wildlife watching', 'Base jumping', 'Rock climbing']
   )
 
   spot_7 = Spot.create!(
@@ -133,7 +187,16 @@ require 'open-uri'
     showers: false,
     grills: true,
     signage: true,
-    pets_allowed: 1
+    pets_allowed: 1,
+    sites: 4,
+    tents: true,
+    cabins: false,
+    parking: true,
+    wifi: false,
+    picnic: true,
+    portable_water: true,
+    trash_bins: true,
+    activities: ['Hiking', 'Horseback ridng', 'Wildlife watching', 'Rock climbing']
   )
 
   spot_8 = Spot.create!(
@@ -149,7 +212,16 @@ require 'open-uri'
     showers: false,
     grills: false,
     signage: true,
-    pets_allowed: 2
+    pets_allowed: 2,
+    sites: 3,
+    tents: true,
+    cabins: false,
+    parking: true,
+    wifi: false,
+    picnic: true,
+    portable_water: true,
+    trash_bins: true,
+    activities: ['Hiking', 'Wildlife watching', 'Paddling', 'Swimming']
   )
 
   spot_9 = Spot.create!(
@@ -165,7 +237,16 @@ require 'open-uri'
     showers: false,
     grills: false,
     signage: true,
-    pets_allowed: 0
+    pets_allowed: 0,
+    sites: 0,
+    tents: true,
+    cabins: false,
+    parking: false,
+    wifi: false,
+    picnic: false,
+    portable_water: false,
+    trash_bins: false,
+    activities: ['Hiking','Wildlife watching', 'Rock climbing']
   )
 
   Spot.all.each_with_index do |spot, idx|

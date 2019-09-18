@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Carousel from '../carousel/carousel';
 import GreetingContainer from '../../greeting/greeting_container';
 import Modal from '../../modal/modal';
+import SpotCards from './spot_cards_info';
 
 class SpotShow extends React.Component {
 
@@ -12,6 +13,7 @@ class SpotShow extends React.Component {
 
   render() {
     if (!this.props.spot) return null;
+    const { spot } = this.props.spot
 
     return(
       <div className="spot-show-container">
@@ -26,8 +28,8 @@ class SpotShow extends React.Component {
                 <div className="show-content-container">
                   <div className="show-content">
                     <div className="content">
-                      {/* will render show details component here */}
-                      <h1 className="content-header">Pack Your Essentails, And Let's Goo!</h1>
+                      {/* will render spot details component here */}
+                      <h1 className="content-header">{this.props.spot.title}</h1>
                       <div className="content-list">
                         <span className="nearby">Nearby: </span>
                           Your dream camping trip.
@@ -46,14 +48,14 @@ class SpotShow extends React.Component {
             <div className="show-listing-row">
               show listing row
               <div className="show-listing-column">
-                show listing column
+                spot column
                 <section className="overview">
                   overview
                   <div clasName="overview-header">
                     overview header
                   </div>
                   <div className="overview-cards">
-                    overview cards
+                    <SpotCards spot={spot} />
                   </div>
                 </section>
               </div>

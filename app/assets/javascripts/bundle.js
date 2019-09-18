@@ -918,7 +918,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Footer = function Footer() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "footer-wrapper"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", {
     className: "footer"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "footer-main"
@@ -954,7 +956,11 @@ var Footer = function Footer() {
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "https://www.linkedin.com/in/anuhangg/",
     className: "footer-social-linkedin-link"
-  }, "Linkedin")))))));
+  }, "Linkedin"))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "footer-bottom-container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "footer-bottom"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Made in California."))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Footer);
@@ -1459,6 +1465,38 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 
 /***/ }),
 
+/***/ "./frontend/components/spots/spot_show/spot_cards_info.jsx":
+/*!*****************************************************************!*\
+  !*** ./frontend/components/spots/spot_show/spot_cards_info.jsx ***!
+  \*****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+
+var SpotCards = function SpotCards(props) {
+  var spot = props.spot;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "spot-cards"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "spot-cards-container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "cards"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "cards-header"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Amenities")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "cards-filter"
+  }, "fdsgsdf"))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (SpotCards);
+
+/***/ }),
+
 /***/ "./frontend/components/spots/spot_show/spot_show.jsx":
 /*!***********************************************************!*\
   !*** ./frontend/components/spots/spot_show/spot_show.jsx ***!
@@ -1474,6 +1512,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _carousel_carousel__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../carousel/carousel */ "./frontend/components/spots/carousel/carousel.jsx");
 /* harmony import */ var _greeting_greeting_container__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../greeting/greeting_container */ "./frontend/components/greeting/greeting_container.js");
 /* harmony import */ var _modal_modal__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../modal/modal */ "./frontend/components/modal/modal.jsx");
+/* harmony import */ var _spot_cards_info__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./spot_cards_info */ "./frontend/components/spots/spot_show/spot_cards_info.jsx");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -1491,6 +1530,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
 
 
 
@@ -1518,6 +1558,7 @@ function (_React$Component) {
     key: "render",
     value: function render() {
       if (!this.props.spot) return null;
+      var spot = this.props.spot.spot;
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "spot-show-container"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1540,7 +1581,7 @@ function (_React$Component) {
         className: "content"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
         className: "content-header"
-      }, "Pack Your Essentails, And Let's Goo!"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, this.props.spot.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "content-list"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "nearby"
@@ -1552,13 +1593,15 @@ function (_React$Component) {
         className: "show-listing-row"
       }, "show listing row", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "show-listing-column"
-      }, "show listing column", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+      }, "spot column", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
         className: "overview"
       }, "overview", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         clasName: "overview-header"
       }, "overview header"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "overview-cards"
-      }, "overview cards")))))));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_spot_cards_info__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        spot: spot
+      }))))))));
     }
   }]);
 
@@ -31815,7 +31858,7 @@ function warning(message) {
 /*!***************************************************************!*\
   !*** ./node_modules/react-router-dom/esm/react-router-dom.js ***!
   \***************************************************************/
-/*! exports provided: MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext, BrowserRouter, HashRouter, Link, NavLink */
+/*! exports provided: BrowserRouter, HashRouter, Link, NavLink, MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

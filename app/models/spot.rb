@@ -2,29 +2,38 @@
 #
 # Table name: spots
 #
-#  id           :bigint           not null, primary key
-#  host_id      :integer          not null
-#  title        :string           not null
-#  description  :text             not null
-#  price        :integer          not null
-#  lat          :float            not null
-#  lng          :float            not null
-#  group_size   :integer          not null
-#  created_at   :datetime         not null
-#  updated_at   :datetime         not null
-#  toilets      :boolean          not null
-#  pets_allowed :integer          not null
-#  showers      :boolean          not null
-#  grills       :boolean          not null
-#  signage      :boolean          not null
-#  campfires    :boolean          not null
+#  id             :bigint           not null, primary key
+#  host_id        :integer          not null
+#  title          :string           not null
+#  description    :text             not null
+#  price          :integer          not null
+#  lat            :float            not null
+#  lng            :float            not null
+#  group_size     :integer          not null
+#  created_at     :datetime         not null
+#  updated_at     :datetime         not null
+#  toilets        :boolean          not null
+#  pets_allowed   :integer          not null
+#  showers        :boolean          not null
+#  grills         :boolean          not null
+#  signage        :boolean          not null
+#  campfires      :boolean          not null
+#  sites          :integer
+#  tents          :boolean          default(FALSE), not null
+#  cabins         :boolean          default(FALSE), not null
+#  parking        :boolean          default(FALSE), not null
+#  wifi           :boolean          default(FALSE), not null
+#  picnic         :boolean          default(FALSE), not null
+#  portable_water :boolean          default(FALSE), not null
+#  trash_bins     :boolean          default(FALSE), not null
+#  activities     :string           default([]), is an Array
 #
 
 class Spot < ApplicationRecord
-  validates :title, :description, :price, :lat, :lng, :group_size, presence: true
+  validates :title, :description, :price, :lat, :lng, :group_size, :sites, presence: true
   validates :pets_allowed, inclusion: { in: [ 0, 1, 2, 3] }
 
-  validates :campfires, :toilets, :showers, :grills, :signage, inclusion: { in: [ true, false ]}
+  validates :campfires, :toilets, :showers, :grills, :signage, :tents, :cabins, :parking, :wifi, :picnic, :portable_water, :trash_bins, inclusion: { in: [ true, false ] }
 
   belongs_to :user,
   foreign_key: :host_id,
