@@ -19,13 +19,27 @@ require 'open-uri'
     last_name: "bryant"
   )
 
+  ben_simmons = User.create!(
+    email: "rookie@sixers.com",
+    password: "sixers25",
+    first_name: "ben",
+    last_name: "simmons"
+  )
+
+  joel_embiid = User.create!(
+    email: "theprocess@sixers.com",
+    password: "sixers21",
+    first_name: "joel",
+    last_name: "embiid"
+  )
+
 
   ## SPOTS
   Spot.destroy_all
   Spot.connection.execute('ALTER SEQUENCE spots_id_seq RESTART WITH 1')
 
   spot_1 = Spot.create!(
-    host_id: user_demo.id,
+    host_id: joel_embiid.id,
     title: "Glen Canyon National Recreation Area",
     description: "This National Park Service-run area consists of over a million acres of lake and desert. The blue waters of Lake Powell are great for swimming, boating, fishing, and kayaking. Whatever your sport, this landscape will have you feeling like you found a desert oasis. Tours of the Glen Canyon Dam offer you the chance to learn about history and engineering. You may also want to go to the sacred, historic Rainbow Bridge National Monument. There's also the incredible Antelope Slot Canyons, only a short drive away. When you get tired of sightseeing, take a hike through wilderness, canyons and secret passageways.In terms of campgrounds, there's a lot to choose from, including many primitive sites. There are also developed sites with full water and electricity hookups.",
     price: 45,
@@ -50,7 +64,7 @@ require 'open-uri'
   )
 
   spot_2 = Spot.create!(
-    host_id: user_demo.id,
+    host_id: ben_simmons.id,
     title: "Upper Pines Campground",
     description: "As with most things in Yosemite, bigger is better. Upper Pines Campground is no exception, boasting 240 campsites. It very well may be the most popular campground in Yosemite Valley, due, in part, to the views of surrounding icons, like El Capitan and Half Dome. Each site features a fire ring, food locker, and picnic table, and costs $26 per night. Upper Pines gets crowded in a hurry, so go in with the knowledge that you'll be nestled up next to your neighbor, with very little privacy (I mean...it is Yosemite Valley after all). That being said, the central location and convenience of Upper Pines makes it a no-brainer when visiting Yosemite. ",
     price: 10,
@@ -75,7 +89,7 @@ require 'open-uri'
   )
 
   spot_3 = Spot.create!(
-    host_id: user_demo.id,
+    host_id: joel_embiid.id,
     title: "Trollveggen camping AS",
     description: "minutes away from the troll wall! The Troll Wall has been a prestigious goal for climbers and base jumpers alike",
     price: 50,
@@ -100,7 +114,7 @@ require 'open-uri'
   )
 
   spot_4 = Spot.create!(
-    host_id: user_demo.id,
+    host_id: ben_simmons.id,
     title: "Machu Pichu Camp",
     description: "Machu Picchu Camping Trek. ... After reaching Machu Picchu, enjoy a private tour of the sacred grounds and a luxurious lunch overlooking Machu Picchu. Finally, cruise the Vistadome train while returning to Cusco, where a Celebration Dinner and cozy lodge awaits.",
     price: 100,
@@ -125,7 +139,7 @@ require 'open-uri'
   )
 
   spot_5 = Spot.create!(
-    host_id: user_demo.id,
+    host_id: joel_embiid.id,
     title: "Chugach National Forest",
     description: "kayak Prince William Sound where you’ll be surrounded by towering glaciers and joined by orcas.",
     price: 50,
@@ -150,7 +164,7 @@ require 'open-uri'
   )
 
   spot_6 = Spot.create!(
-    host_id: user_demo.id,
+    host_id: ben_simmons.id,
     title: "Zion National Park",
     description: "Red and cream canyons lead to huge towers of rock filled with natural hanging gardens. Big Horn Sheep face off in the valleys below like something out of Nat Geo. The Virgin River flows through it all, changing colors from neon aquamarine to milky silt depending on the rainfall.",
     price: 35,
@@ -175,7 +189,7 @@ require 'open-uri'
   )
 
   spot_7 = Spot.create!(
-    host_id: user_demo.id,
+    host_id: ben_simmons.id,
     title: "Yellowstone National Park",
     description: "Yellowstone National Park has been a destination for outdoor enthusiasts since being founded in 1872. With over 300 hydrothermal geysers, including a litany of hot springs, the park is one of the most geothermally active in the country, particularly in West Yellowstone.",
     price: 40,
@@ -200,7 +214,7 @@ require 'open-uri'
   )
 
   spot_8 = Spot.create!(
-    host_id: user_demo.id,
+    host_id: joel_embiid.id,
     title: "Redwood National and State Parks",
     description: "You don't need a magic wand to explore a land of giants; just explore a redwood forest. These trees can grow to nearly 400 feet high and 22 feet wide and live too 2,000 years old. The series of redwood parks starts at Crescent City California and run south along the coastal region to Trinidad.",
     price: 25,
@@ -225,7 +239,7 @@ require 'open-uri'
   )
 
   spot_9 = Spot.create!(
-    host_id: user_demo.id,
+    host_id: ben_simmons.id,
     title: "Torres del Paine National Park",
     description: "Torres del Paine National Park, in Chile’s Patagonia region, is known for its soaring mountains, bright blue icebergs that cleave from glaciers and golden pampas (grasslands) that shelter rare wildlife_such as llama-like guanacos.",
     price: 25,

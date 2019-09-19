@@ -1483,16 +1483,7 @@ var SpotCards = function SpotCards(props) {
     className: "cards"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "cards-header"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Amenities")), spot.portable_water && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "cards-filter"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "amenities-cards-info-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "cards-img",
-    src: window.water
-  }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "amenities-cards-span"
-  }, spot.portable_water ? "Portable water available" : "Portable water not available"))), spot.cabins && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Amenities")), spot.cabins && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "cards-filter"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "amenities-cards-info-container"
@@ -1501,16 +1492,7 @@ var SpotCards = function SpotCards(props) {
     src: window.cabin
   }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "amenities-cards-span"
-  }, "Cabins available"))), spot.toilets && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "cards-filter"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "amenities-cards-info-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "cards-img",
-    src: window.toilet
-  }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "amenities-cards-span"
-  }, "Toilets available"))), spot.showers && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Cabins available"))), spot.showers && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "cards-filter"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "amenities-cards-info-container"
@@ -1546,16 +1528,7 @@ var SpotCards = function SpotCards(props) {
     src: window.tent
   }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "amenities-cards-span"
-  }, "Tents available"))), spot.parking && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "cards-filter"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "amenities-cards-info-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "cards-img",
-    src: window.parking
-  }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "amenities-cards-span"
-  }, "Parking available"))), spot.wifi && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Tents available"))), spot.wifi && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "cards-filter"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "amenities-cards-info-container"
@@ -1582,7 +1555,47 @@ var SpotCards = function SpotCards(props) {
     src: window.trash
   }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "amenities-cards-span"
-  }, "Trash bins available"))), spot.campfires && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Trash bins available")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "cards"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "cards-header"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Essentials")), spot.portable_water && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "cards-filter"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "amenities-cards-info-container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "cards-img",
+    src: window.water
+  }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "amenities-cards-span"
+  }, "Portable water available"))), spot.pets_allowed && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "cards-filter"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "amenities-cards-info-container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "cards-img",
+    src: window.pet
+  }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "amenities-cards-span"
+  }, "Pets allowed"))), spot.toilets && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "cards-filter"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "amenities-cards-info-container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "cards-img",
+    src: window.toilet
+  }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "amenities-cards-span"
+  }, "Toilets available"))), spot.parking && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "cards-filter"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "amenities-cards-info-container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "cards-img",
+    src: window.parking
+  }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "amenities-cards-span"
+  }, "Parking available"))), spot.campfires && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "cards-filter"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "amenities-cards-info-container"
@@ -1591,22 +1604,7 @@ var SpotCards = function SpotCards(props) {
     src: window.campfire
   }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "amenities-cards-span"
-  }, "Campfires bins available")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "cards"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "cards-header"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Activities")), spot.activities.map(function (activity, idx) {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "cards-filter"
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "activities-cards-info-container"
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-      className: "cards-img",
-      src: window[activity]
-    }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-      className: "activities-cards-span"
-    }, "".concat(activity))));
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Campfire allowed")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "cards"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "cards-header"
@@ -1622,7 +1620,7 @@ var SpotCards = function SpotCards(props) {
     src: window.tent
   }), "\xA0", spot.cabins ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "campsitearea-cards-span"
-  }, "Enjoy your stay in our beautiful cabins") : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+  }, "Enjoy our beautiful cabins") : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "campsitearea-cards-span"
   }, "Bring your own tents"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "cards-filter"
@@ -1642,16 +1640,7 @@ var SpotCards = function SpotCards(props) {
     src: window.group_size
   }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "campsitearea-cards-span"
-  }, "Up to ".concat(spot.group_size, " per site")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "cards-filter"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "campsitearea-cards-info-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "cards-img",
-    src: window.sites
-  }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "campsitearea-cards-span"
-  }, "".concat(spot.sites, " sites available")))))));
+  }, "Up to ".concat(spot.group_size, " per site")))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (SpotCards);
@@ -1675,6 +1664,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modal_modal__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../modal/modal */ "./frontend/components/modal/modal.jsx");
 /* harmony import */ var _spot_cards_info__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./spot_cards_info */ "./frontend/components/spots/spot_show/spot_cards_info.jsx");
 /* harmony import */ var _spot_activities__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./spot_activities */ "./frontend/components/spots/spot_show/spot_activities.jsx");
+/* harmony import */ var _spot_show_intro__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./spot_show_intro */ "./frontend/components/spots/spot_show/spot_show_intro.jsx");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -1692,6 +1682,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
 
 
 
@@ -1759,7 +1750,9 @@ function (_React$Component) {
         className: "overview"
       }, "overview", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "overview-header"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_spot_show_intro__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        spot: this.props.spot
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "overview-cards"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_spot_cards_info__WEBPACK_IMPORTED_MODULE_5__["default"], {
         spot: this.props.spot
@@ -1814,6 +1807,32 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_0__["connect"])(mapStateToProps, mapDispatchToProps)(_spot_show__WEBPACK_IMPORTED_MODULE_2__["default"]));
+
+/***/ }),
+
+/***/ "./frontend/components/spots/spot_show/spot_show_intro.jsx":
+/*!*****************************************************************!*\
+  !*** ./frontend/components/spots/spot_show/spot_show_intro.jsx ***!
+  \*****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+
+var SpotIntro = function SpotIntro(props) {
+  var spot = props.spot;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "spot-header-container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "spot-header"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "placeholder for user photo")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Hosted by ", spot.user.first_name));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (SpotIntro);
 
 /***/ }),
 
@@ -32026,7 +32045,7 @@ function warning(message) {
 /*!***************************************************************!*\
   !*** ./node_modules/react-router-dom/esm/react-router-dom.js ***!
   \***************************************************************/
-/*! exports provided: BrowserRouter, HashRouter, Link, NavLink, MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext */
+/*! exports provided: MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext, BrowserRouter, HashRouter, Link, NavLink */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

@@ -5,6 +5,8 @@ import GreetingContainer from '../../greeting/greeting_container';
 import Modal from '../../modal/modal';
 import SpotCards from './spot_cards_info';
 import SpotActivities from './spot_activities';
+import SpotIntro from './spot_show_intro';
+import SpotDetails from './spot_details';
 
 class SpotShow extends React.Component {
 
@@ -51,15 +53,14 @@ class SpotShow extends React.Component {
                 spot column
 
                 <section className="overview">
-                  overview
                   <div className="overview-header">
-                    {/* will render spot details component here */}
+                    <SpotIntro spot={this.props.spot} />
                   </div>
                   <div className="overview-cards">
                     <SpotCards spot={this.props.spot} />
                   </div>
                   <div className="overview-details">
-                    {/* details */}
+                    <SpotDetails spot={this.props.spot} />
                   </div>
                   <div className="overview-activities">
                     <SpotActivities spot={this.props.spot} />

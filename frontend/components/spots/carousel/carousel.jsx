@@ -76,11 +76,13 @@ class Carousel extends React.Component {
 
     const photos = this.props.photos.map((photoUrl, idx) =>
       <img src={photoUrl} key={idx} className="carousel-photo" key={idx}/>
+      console.log(img.width, img.naturalWidth)
     )
 
 
     const firstImg = this.props.photos[0];
     const lastImg = this.props.photos[this.props.photos.length - 1];
+
     photos.push(
       <img src={firstImg} className="firstClone" /> 
     );
