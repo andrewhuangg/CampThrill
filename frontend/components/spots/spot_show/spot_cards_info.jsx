@@ -3,9 +3,7 @@ import React from 'react';
 const SpotCards = (props) => {
 
   const { spot } = props;
-
-  // if (spot.portable_water)
-    
+   
   return (
     <div className="spot-cards">
       <div className="spot-cards-container">
@@ -174,6 +172,7 @@ const SpotCards = (props) => {
               </div>
             </div>
           )}
+
         </div>
 
         <div className="cards">

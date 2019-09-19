@@ -46,7 +46,7 @@ require 'open-uri'
     picnic: false,
     portable_water: true,
     trash_bins: false,
-    activities: ['biking', 'hiking', 'horseback-riding','wildlife-watching', 'rock-climbing']
+    activities: ['biking', 'hiking', 'horseback_riding','wildlife', 'rock_climbing']
   )
 
   spot_2 = Spot.create!(
@@ -71,7 +71,7 @@ require 'open-uri'
     picnic: true,
     portable_water: true,
     trash_bins: false,
-    activities: ['hiking', 'wildlife-watching', 'base-jumping', 'rock-climbing']
+    activities: ['hiking', 'wildlife', 'base_jumping', 'rock_climbing']
   )
 
   spot_3 = Spot.create!(
@@ -96,7 +96,7 @@ require 'open-uri'
     picnic: false,
     portable_water: false,
     trash_bins: false,
-    activities: ['hiking', 'wildlife-watching', 'base-jumping', 'rock-climbing']
+    activities: ['hiking', 'wildlife', 'base_jumping', 'rock_climbing']
   )
 
   spot_4 = Spot.create!(
@@ -121,7 +121,7 @@ require 'open-uri'
     picnic: false,
     portable_water: true,
     trash_bins: false,
-    activities: ['hiking', 'horseback-riding', 'wildlife-watching']
+    activities: ['hiking', 'horseback_riding', 'wildlife']
   )
 
   spot_5 = Spot.create!(
@@ -146,7 +146,7 @@ require 'open-uri'
     picnic: false,
     portable_water: true,
     trash_bins: true,
-    activities: ['hiking', 'paddling', 'boating', 'fishing', 'swimming', 'wildlife-watching', 'rock-climbing']
+    activities: ['hiking', 'paddling', 'boating', 'fishing', 'swimming', 'wildlife', 'rock_climbing']
   )
 
   spot_6 = Spot.create!(
@@ -171,7 +171,7 @@ require 'open-uri'
     picnic: false,
     portable_water: true,
     trash_bins: false,
-    activities: ['hiking', 'horseback-riding', 'wildlife-watching', 'rock-climbing']
+    activities: ['hiking', 'horseback_riding', 'wildlife', 'rock_climbing']
   )
 
   spot_7 = Spot.create!(
@@ -196,7 +196,7 @@ require 'open-uri'
     picnic: true,
     portable_water: true,
     trash_bins: true,
-    activities: ['hiking', 'horseback-riding', 'wildlife-watching', 'rock-climbing']
+    activities: ['hiking', 'horseback_riding', 'wildlife', 'rock_climbing']
   )
 
   spot_8 = Spot.create!(
@@ -221,7 +221,7 @@ require 'open-uri'
     picnic: true,
     portable_water: true,
     trash_bins: true,
-    activities: ['hiking', 'wildlife-watching', 'paddling', 'swimming']
+    activities: ['hiking', 'wildlife', 'paddling', 'swimming']
   )
 
   spot_9 = Spot.create!(
@@ -246,7 +246,7 @@ require 'open-uri'
     picnic: false,
     portable_water: false,
     trash_bins: false,
-    activities: ['hiking','wildlife-watching', 'rock-climbing']
+    activities: ['hiking','wildlife', 'rock_climbing']
   )
 
   Spot.all.each_with_index do |spot, idx|
