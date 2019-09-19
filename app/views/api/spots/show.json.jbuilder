@@ -17,6 +17,7 @@ json.set! @spot.id do
   json.grills @spot.grills
   json.signage @spot.signage
   json.tents @spot.tents
+  json.sites @spot.sites
   json.cabins @spot.cabins
   json.parking @spot.parking
   json.wifi @spot.wifi

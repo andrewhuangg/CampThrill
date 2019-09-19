@@ -59,7 +59,6 @@ class Carousel extends React.Component {
 
     setTimeout(() => {
       if ((carouselImages[that.state.counter].className) === "firstClone") {
-
         carouselSlide.style.transition = "none";
         carouselSlide.style.transform = 'translateX(' + (-size * 0) + 'px)';
         that.setState({
@@ -75,15 +74,19 @@ class Carousel extends React.Component {
   render() {
     if (!this.props.photos) return null;
 
-    const photos = this.props.photos.map((photoUrl, idx) => 
+    const photos = this.props.photos.map((photoUrl, idx) =>
       <img src={photoUrl} key={idx} className="carousel-photo" key={idx}/>
     )
 
 
     const firstImg = this.props.photos[0];
     const lastImg = this.props.photos[this.props.photos.length - 1];
-    photos.push(<img src={firstImg} className="firstClone" /> );
-    photos.unshift(<img src={lastImg} className="lastClone" /> );
+    photos.push(
+      <img src={firstImg} className="firstClone" /> 
+    );
+    photos.unshift(
+      <img src={lastImg} className="lastClone" />
+    );
 
     return (
       <div className="carousel-main-container">

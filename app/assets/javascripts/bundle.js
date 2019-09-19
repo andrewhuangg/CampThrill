@@ -1474,7 +1474,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var SpotCards = function SpotCards(props) {
-  var spot = props.spot;
+  var spot = props.spot; // if (spot.portable_water)
+
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "spot-cards"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1483,7 +1484,7 @@ var SpotCards = function SpotCards(props) {
     className: "cards"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "cards-header"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Amenities")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Amenities")), spot.portable_water && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "cards-filter"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "amenities-cards-info-container"
@@ -1492,7 +1493,7 @@ var SpotCards = function SpotCards(props) {
     src: window.water
   }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "amenities-cards-span"
-  }, spot.portable_water ? "Portable water available" : "Portable water not available"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, spot.portable_water ? "Portable water available" : "Portable water not available"))), spot.cabins && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "cards-filter"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "amenities-cards-info-container"
@@ -1501,7 +1502,7 @@ var SpotCards = function SpotCards(props) {
     src: window.cabin
   }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "amenities-cards-span"
-  }, spot.cabins ? "Cabins available" : "Cabins not available"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Cabins available"))), spot.toilets && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "cards-filter"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "amenities-cards-info-container"
@@ -1510,7 +1511,7 @@ var SpotCards = function SpotCards(props) {
     src: window.toilet
   }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "amenities-cards-span"
-  }, spot.toilets ? "Toilets available" : "Toilets not available"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Toilets available"))), spot.showers && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "cards-filter"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "amenities-cards-info-container"
@@ -1519,7 +1520,7 @@ var SpotCards = function SpotCards(props) {
     src: window.shower
   }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "amenities-cards-span"
-  }, spot.showers ? "Showers available" : "Showers not available"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Showers available"))), spot.grills && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "cards-filter"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "amenities-cards-info-container"
@@ -1528,7 +1529,7 @@ var SpotCards = function SpotCards(props) {
     src: window.grill
   }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "amenities-cards-span"
-  }, spot.grills ? "Grills available" : "Grills not available"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Grills available"))), spot.signage && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "cards-filter"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "amenities-cards-info-container"
@@ -1537,7 +1538,7 @@ var SpotCards = function SpotCards(props) {
     src: window.signage
   }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "amenities-cards-span"
-  }, spot.signage ? "Signage available" : "Signage not available"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Signage available"))), spot.tents && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "cards-filter"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "amenities-cards-info-container"
@@ -1546,7 +1547,7 @@ var SpotCards = function SpotCards(props) {
     src: window.tent
   }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "amenities-cards-span"
-  }, spot.tents ? "Tents available" : "Tents not available"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Tents available"))), spot.parking && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "cards-filter"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "amenities-cards-info-container"
@@ -1555,7 +1556,7 @@ var SpotCards = function SpotCards(props) {
     src: window.parking
   }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "amenities-cards-span"
-  }, spot.parking ? "Parking available" : "Parking not available"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Parking available"))), spot.wifi && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "cards-filter"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "amenities-cards-info-container"
@@ -1564,7 +1565,7 @@ var SpotCards = function SpotCards(props) {
     src: window.wifi
   }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "amenities-cards-span"
-  }, spot.wifi ? "Wifi available" : "Wifi not available"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Wifi available"))), spot.picnic && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "cards-filter"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "amenities-cards-info-container"
@@ -1573,7 +1574,7 @@ var SpotCards = function SpotCards(props) {
     src: window.picnic
   }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "amenities-cards-span"
-  }, spot.picnic ? "Picnic available" : "Picnic not available"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Picnic available"))), spot.trash_bins && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "cards-filter"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "amenities-cards-info-container"
@@ -1582,7 +1583,7 @@ var SpotCards = function SpotCards(props) {
     src: window.trash
   }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "amenities-cards-span"
-  }, spot.trash_bins ? "Trash bins available" : "Trash bins not available"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Trash bins available"))), spot.campfires && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "cards-filter"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "amenities-cards-info-container"
@@ -1591,7 +1592,7 @@ var SpotCards = function SpotCards(props) {
     src: window.campfire
   }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "amenities-cards-span"
-  }, spot.campfires ? "Campfires bins available" : "Campfires bins not available")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Campfires bins available")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "cards"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "cards-header"
@@ -1605,8 +1606,53 @@ var SpotCards = function SpotCards(props) {
       src: window[activity]
     }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
       className: "activities-cards-span"
-    }, "".concat(activity, " is available"))));
-  }))));
+    }, "".concat(activity))));
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "cards"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "cards-header"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Campsite area")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "cards-filter"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "campsitearea-cards-info-container"
+  }, spot.cabins ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "cards-img",
+    src: window.cabin
+  }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "cards-img",
+    src: window.tent
+  }), "\xA0", spot.cabins ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "campsitearea-cards-span"
+  }, "Enjoy your stay in our beautiful cabins") : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "campsitearea-cards-span"
+  }, "Bring your own tents"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "cards-filter"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "campsitearea-cards-info-container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "cards-img",
+    src: window.sites
+  }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "campsitearea-cards-span"
+  }, "".concat(spot.sites, " sites available")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "cards-filter"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "campsitearea-cards-info-container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "cards-img",
+    src: window.group_size
+  }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "campsitearea-cards-span"
+  }, "Up to ".concat(spot.group_size, " per site")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "cards-filter"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "campsitearea-cards-info-container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "cards-img",
+    src: window.sites
+  }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "campsitearea-cards-span"
+  }, "".concat(spot.sites, " sites available")))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (SpotCards);

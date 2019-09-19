@@ -25,6 +25,7 @@
     json.cabins spot.cabins
     json.parking spot.parking
     json.wifi spot.wifi
+    json.sites spot.sites
     json.picnic spot.picnic
     json.portable_water spot.portable_water
     json.trash_bins spot.trash_bins
