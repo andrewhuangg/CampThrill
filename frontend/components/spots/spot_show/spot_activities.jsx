@@ -6,6 +6,8 @@ const SpotActivities = (props) => {
   
   return (
     <div className="spot-activities-container">
+      <h3 className="activities-header">Activities</h3>
+      <div className="activities-array">
       {spot.activities.map((activity, idx) =>
         <div className="spot-activity-cards" key={idx}>
           <div className="spot-activities">
@@ -14,6 +16,7 @@ const SpotActivities = (props) => {
           <p className="spot-activity-p">{`${activity.split('_').join(' ')}`}</p>
         </div>
       )}
+      </div>
     </div>
   )
 }

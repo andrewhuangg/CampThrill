@@ -127,7 +127,7 @@ const SpotCards = (props) => {
             </div>
           }
 
-          {spot.pets_allowed &&
+          {spot.pets_allowed > 0 &&
             <div className="cards-filter">
               <div className="amenities-cards-info-container">
                 <img className="cards-img" src={window.pet} />

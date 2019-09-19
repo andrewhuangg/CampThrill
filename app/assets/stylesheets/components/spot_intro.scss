@@ -5,28 +5,32 @@
 
   .spot-intro-header {
     display: flex;
-    border: solid black;
+    border: solid black 5px;
     width: 200px;
     height: 100px;
     margin: 0 auto;
+    text-align: center;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
+    font-size: $navbarFontSize;
+    font-family: $navbarFont;
 
     .spot-intro-h3 {
-      font-size: 10px;
+      font-size: 15px;
     }
   }
 
   .spot-intro-body-container {
     display: flex;
-    border: solid red;
     justify-content: center;
     align-items: center;
     margin: 0% 2%;
+    width: 150%;
 
     .spot-intro-p {
-      font-size: 10px;
+      font-size: 14px;
+      margin: 1%;
     }
 
   }

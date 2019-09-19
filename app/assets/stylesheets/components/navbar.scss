@@ -1,4 +1,10 @@
 .master-nav-container{
+  background-color: white;
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+  padding: 10px 0px;
+
 
   .nav-main-container {
     display: flex;

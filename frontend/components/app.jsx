@@ -1,5 +1,6 @@
 import React from 'react';
-import Spot from './spots/spot';
+import Splash from './spots/splash';
+import SpotIndex from './spots/spot_index/spot_index_page';
 import SpotShowContainer from './spots/spot_show/spot_show_container';
 import Nav from './splash/nav';
 import Header from './splash/header';
@@ -18,7 +19,8 @@ const App = () => {
 
       <div className="body-container">
         <Route exact path="/" component={Header} />
-        <Route exact path="/" component={Spot} />
+        <Route exact path="/" component={Splash} />
+        <Route exact path="/spots" component={SpotIndex} />
       </div>
       
       <div className="spotshow-master-container">

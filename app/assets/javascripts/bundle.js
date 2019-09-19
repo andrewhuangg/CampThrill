@@ -303,12 +303,14 @@ document.addEventListener("DOMContentLoaded", function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _spots_spot__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./spots/spot */ "./frontend/components/spots/spot.jsx");
-/* harmony import */ var _spots_spot_show_spot_show_container__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./spots/spot_show/spot_show_container */ "./frontend/components/spots/spot_show/spot_show_container.js");
-/* harmony import */ var _splash_nav__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./splash/nav */ "./frontend/components/splash/nav.jsx");
-/* harmony import */ var _splash_header__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./splash/header */ "./frontend/components/splash/header.jsx");
-/* harmony import */ var _splash_footer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./splash/footer */ "./frontend/components/splash/footer.jsx");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _spots_splash__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./spots/splash */ "./frontend/components/spots/splash.jsx");
+/* harmony import */ var _spots_spot_index_spot_index_page__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./spots/spot_index/spot_index_page */ "./frontend/components/spots/spot_index/spot_index_page.jsx");
+/* harmony import */ var _spots_spot_show_spot_show_container__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./spots/spot_show/spot_show_container */ "./frontend/components/spots/spot_show/spot_show_container.js");
+/* harmony import */ var _splash_nav__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./splash/nav */ "./frontend/components/splash/nav.jsx");
+/* harmony import */ var _splash_header__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./splash/header */ "./frontend/components/splash/header.jsx");
+/* harmony import */ var _splash_footer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./splash/footer */ "./frontend/components/splash/footer.jsx");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+
 
 
 
@@ -320,28 +322,32 @@ __webpack_require__.r(__webpack_exports__);
 var App = function App() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "main-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__["Route"], {
     path: "/",
-    component: _splash_nav__WEBPACK_IMPORTED_MODULE_3__["default"]
+    component: _splash_nav__WEBPACK_IMPORTED_MODULE_4__["default"]
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "body-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__["Route"], {
     exact: true,
     path: "/",
-    component: _splash_header__WEBPACK_IMPORTED_MODULE_4__["default"]
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
+    component: _splash_header__WEBPACK_IMPORTED_MODULE_5__["default"]
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__["Route"], {
     exact: true,
     path: "/",
-    component: _spots_spot__WEBPACK_IMPORTED_MODULE_1__["default"]
+    component: _spots_splash__WEBPACK_IMPORTED_MODULE_1__["default"]
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__["Route"], {
+    exact: true,
+    path: "/spots",
+    component: _spots_spot_index_spot_index_page__WEBPACK_IMPORTED_MODULE_2__["default"]
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "spotshow-master-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__["Route"], {
     exact: true,
     path: "/spots/:spotId",
-    component: _spots_spot_show_spot_show_container__WEBPACK_IMPORTED_MODULE_2__["default"]
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
+    component: _spots_spot_show_spot_show_container__WEBPACK_IMPORTED_MODULE_3__["default"]
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__["Route"], {
     path: "/",
-    component: _splash_footer__WEBPACK_IMPORTED_MODULE_5__["default"]
+    component: _splash_footer__WEBPACK_IMPORTED_MODULE_6__["default"]
   }));
 };
 
@@ -1196,10 +1202,10 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ "./frontend/components/spots/spot.jsx":
-/*!********************************************!*\
-  !*** ./frontend/components/spots/spot.jsx ***!
-  \********************************************/
+/***/ "./frontend/components/spots/splash.jsx":
+/*!**********************************************!*\
+  !*** ./frontend/components/spots/splash.jsx ***!
+  \**********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1213,7 +1219,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var Spot = function Spot() {
+var Splash = function Splash() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "splash-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1247,10 +1253,14 @@ var Spot = function Spot() {
     className: "large-img"
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "large-image-text"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Unlocking access to incredible new places to camp.")))));
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Unlocking access to incredible new places to camp.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "splash-index-btn"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    to: "/spots"
+  }, "See other camps!")))));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Spot);
+/* harmony default export */ __webpack_exports__["default"] = (Splash);
 
 /***/ }),
 
@@ -1343,6 +1353,41 @@ function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (SpotIndexItem);
+
+/***/ }),
+
+/***/ "./frontend/components/spots/spot_index/spot_index_page.jsx":
+/*!******************************************************************!*\
+  !*** ./frontend/components/spots/spot_index/spot_index_page.jsx ***!
+  \******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _spots_index_container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./spots_index_container */ "./frontend/components/spots/spot_index/spots_index_container.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+
+
+
+
+var SpotIndex = function SpotIndex() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "splash-container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "spot-index-container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+    className: "spot-index-container-section"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+    exact: true,
+    path: "/spots",
+    component: _spots_index_container__WEBPACK_IMPORTED_MODULE_1__["default"]
+  }))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (SpotIndex);
 
 /***/ }),
 
@@ -1480,6 +1525,10 @@ var SpotActivities = function SpotActivities(props) {
   var spot = props.spot;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "spot-activities-container"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+    className: "activities-header"
+  }, "Activities"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "activities-array"
   }, spot.activities.map(function (activity, idx) {
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "spot-activity-cards",
@@ -1492,7 +1541,7 @@ var SpotActivities = function SpotActivities(props) {
     })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
       className: "spot-activity-p"
     }, "".concat(activity.split('_').join(' '))));
-  }));
+  })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (SpotActivities);
@@ -1607,7 +1656,7 @@ var SpotCards = function SpotCards(props) {
     src: window.water
   }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: "amenities-cards-span"
-  }, "Portable water available"))), spot.pets_allowed && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Portable water available"))), spot.pets_allowed > 0 && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "cards-filter"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "amenities-cards-info-container"
@@ -1705,13 +1754,23 @@ var SpotDetails = function SpotDetails(props) {
     className: "spot-details-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "spot-details-header"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Details")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+    className: "spot-details-header-h3"
+  }, "Details")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "spot-details-body"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "spot-details-left"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "details"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Check in: After ", spot.check_in, " PM")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "details"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Check out: Before ", spot.check_out, " PM")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "details"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Cancellation policy: ", spot.cancellation_policy))), spot.minimum_nights < 1 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "spot-details-right"
-  })));
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " Minimum nights: none ")) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "spot-details-right"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " Minimum nights: ", spot.minimum_nights))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (SpotDetails);
@@ -1805,19 +1864,21 @@ function (_React$Component) {
         className: "show-content"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
         className: "content-header"
-      }, this.props.spot.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, this.props.spot.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        className: "content-header-location-btn"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+        to: "/spots"
+      }, this.props.spot.location)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "content-list"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-        className: "heart"
+        className: "like"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "heart-img",
-        src: window.heart
+        className: "like-img",
+        src: window.like
       })), "Your dream camping trip."))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "show-listing-container"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "show-listing"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "show-listing-row"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "show-listing-column"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
@@ -1838,7 +1899,7 @@ function (_React$Component) {
         className: "overview-activities"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_spot_activities__WEBPACK_IMPORTED_MODULE_6__["default"], {
         spot: this.props.spot
-      }))))))));
+      })))))));
     }
   }]);
 
@@ -1901,13 +1962,18 @@ __webpack_require__.r(__webpack_exports__);
 
 var SpotIntro = function SpotIntro(props) {
   var spot = props.spot;
+  var headshot; // if (spot.host_id === ben_simmons.id) {
+  //   headshot = window.bensimmons;
+  // } else if (spot.host_id === joel_embiid) {
+  //   headshot = window.joelembiid;
+  // }
+
+  debugger;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "spot-intro-header-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "spot-intro-header"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-    className: "spot-intro-h3"
-  }, "placeholder for user photo")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "spot-intro-body-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "spot-intro-p"
@@ -32127,7 +32193,7 @@ function warning(message) {
 /*!***************************************************************!*\
   !*** ./node_modules/react-router-dom/esm/react-router-dom.js ***!
   \***************************************************************/
-/*! exports provided: BrowserRouter, HashRouter, Link, NavLink, MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext */
+/*! exports provided: MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext, BrowserRouter, HashRouter, Link, NavLink */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

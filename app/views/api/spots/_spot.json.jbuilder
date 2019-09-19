@@ -28,6 +28,8 @@ json.set! spot.id do
   json.check_out spot.check_out
   json.portable_water spot.portable_water
   json.trash_bins spot.trash_bins
+  json.user spot.user
+  json.host_id spot.host_id
   json.activities spot.activities
   json.indexPhoto url_for(spot.photo)
   json.showPhotos url_for(spot.photos)

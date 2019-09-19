@@ -6,7 +6,7 @@ import {
   Link
 } from 'react-router-dom';
 
-const Spot = () => {
+const Splash = () => {
   return (
     <div className="splash-container">
 
@@ -17,32 +17,32 @@ const Spot = () => {
       </div>
 
       <div className="large-images-container">
-
         <div className="large-image">
-          <img src={window.hand} className="large-img"/>
+          <img src={window.hand} className="large-img" />
           <div className="large-image-text">
             <p>Campthrill empowers people to share their land with campers.</p>
           </div>
         </div>
 
         <div className="large-image">
-          <img src={window.dollar} className="large-img"/>
+          <img src={window.dollar} className="large-img" />
           <div className="large-image-text">
             <p>Creating sustainable revenue and fostering community.</p>
           </div>
         </div>
-        
+
         <div className="large-image">
-          <img src={window.palm} className="large-img"/>
+          <img src={window.palm} className="large-img" />
           <div className="large-image-text">
             <p>Unlocking access to incredible new places to camp.</p>
           </div>
+          <button className="splash-index-btn"><Link to="/spots">See other camps!</Link></button>
         </div>
-        
 
       </div>
+
     </div>
   )
 }
 
-export default Spot;
+export default Splash;

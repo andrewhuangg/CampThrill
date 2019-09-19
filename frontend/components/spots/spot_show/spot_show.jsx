@@ -30,9 +30,12 @@ class SpotShow extends React.Component {
                 <div className="show-content-container">
                   <div className="show-content">
                     <h1 className="content-header">{this.props.spot.title}</h1>
+                    <button className="content-header-location-btn">
+                      <Link to="/spots">{this.props.spot.location}</Link>
+                    </button>
                     <div className="content-list">
-                      <span className="heart">
-                        <img className="heart-img" src={window.heart }/>
+                      <span className="like">
+                        <img className="like-img" src={window.like }/>
                       </span>
                         Your dream camping trip.
                     </div>
@@ -45,26 +48,24 @@ class SpotShow extends React.Component {
 
         <div className="show-listing-container">
           <div className="show-listing">
-            <div className="show-listing-row">
 
-              <div className="show-listing-column">
-                <section className="overview">
-                  <div className="overview-header">
-                    <SpotIntro spot={this.props.spot} />
-                  </div>
-                  <div className="overview-cards">
-                    <SpotCards spot={this.props.spot} />
-                  </div>
-                  <div className="overview-details">
-                    <SpotDetails spot={this.props.spot} />
-                  </div>
-                  <div className="overview-activities">
-                    <SpotActivities spot={this.props.spot} />
-                  </div>
-                </section>  
-              </div>
-              
+            <div className="show-listing-column">
+              <section className="overview">
+                <div className="overview-header">
+                  <SpotIntro spot={this.props.spot} />
+                </div>
+                <div className="overview-cards">
+                  <SpotCards spot={this.props.spot} />
+                </div>
+                <div className="overview-details">
+                  <SpotDetails spot={this.props.spot} />
+                </div>
+                <div className="overview-activities">
+                  <SpotActivities spot={this.props.spot} />
+                </div>
+              </section>  
             </div>
+            
           </div>
         </div>
       </div>

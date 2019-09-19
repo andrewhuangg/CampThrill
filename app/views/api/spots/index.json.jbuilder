@@ -31,8 +31,12 @@
     json.portable_water spot.portable_water
     json.trash_bins spot.trash_bins
     json.activities spot.activities
+    json.check_in spot.check_in
+    json.check_out spot.check_out
     json.picnic spot.picnic
+    json.host_id spot.host_id
     json.location spot.location
+    json.user spot.user
     json.minimum_nights spot.minimum_nights
     json.cancellation_policy spot.cancellation_policy
     json.indexPhoto url_for(spot.photo)
