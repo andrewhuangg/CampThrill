@@ -1968,7 +1968,6 @@ var SpotIntro = function SpotIntro(props) {
   //   headshot = window.joelembiid;
   // }
 
-  debugger;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "spot-intro-header-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {

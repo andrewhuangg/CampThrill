@@ -10,8 +10,6 @@ const SpotIntro = (props) => {
   //   headshot = window.joelembiid;
   // }
 
-  debugger
-
   return (
     <div className="spot-intro-header-container">
       <div className="spot-intro-header">
