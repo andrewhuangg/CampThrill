@@ -75,8 +75,7 @@ class Carousel extends React.Component {
     if (!this.props.photos) return null;
 
     const photos = this.props.photos.map((photoUrl, idx) =>
-      <img src={photoUrl} key={idx} className="carousel-photo" key={idx}/>
-      console.log(img.width, img.naturalWidth)
+      <img src={photoUrl} key={idx} className="carousel-photo" key={idx}/>      
     )
 
 
