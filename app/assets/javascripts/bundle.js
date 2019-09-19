@@ -1962,19 +1962,28 @@ __webpack_require__.r(__webpack_exports__);
 
 var SpotIntro = function SpotIntro(props) {
   var spot = props.spot;
-  var headshot; // if (spot.host_id === ben_simmons.id) {
-  //   headshot = window.bensimmons;
-  // } else if (spot.host_id === joel_embiid) {
-  //   headshot = window.joelembiid;
-  // }
+  var headshot;
+
+  if (spot.user.first_name === "ben" && spot.user.last_name === "simmons") {
+    headshot = window.bensimmons;
+  } else if (spot.user.first_name === "joel" && spot.user.last_name === "embiid") {
+    headshot = window.joelembiid;
+  }
 
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "spot-intro-header-container"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "spot-intro-header"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+    className: "spot-intro-h3"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "spot-headshot-img",
+    src: headshot
+  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "spot-intro-body-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+    className: "spot-body-h3"
+  }, "Hosted by ", spot.user.first_name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "spot-intro-p"
   }, spot.description)));
 };

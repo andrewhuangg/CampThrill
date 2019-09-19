@@ -5,7 +5,7 @@
 
   .spot-intro-header {
     display: flex;
-    border: solid black 5px;
+    border: solid black .05px;
     width: 200px;
     height: 100px;
     margin: 0 auto;
@@ -16,6 +16,11 @@
     font-size: $navbarFontSize;
     font-family: $navbarFont;
 
+    .spot-headshot-img {
+      object-fit: fill;
+      height: 98px;
+    }
+
     .spot-intro-h3 {
       font-size: 15px;
     }
@@ -24,9 +29,14 @@
   .spot-intro-body-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     margin: 0% 2%;
     width: 150%;
+
+    .spot-body-h3 {
+      margin-right: 3%;
+      font-size: 20px;
+    }
 
     .spot-intro-p {
       font-size: 14px;

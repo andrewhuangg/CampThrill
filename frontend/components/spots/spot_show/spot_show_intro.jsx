@@ -4,19 +4,19 @@ const SpotIntro = (props) => {
   const { spot } = props;
 
   let headshot;
-  // if (spot.host_id === ben_simmons.id) {
-  //   headshot = window.bensimmons;
-  // } else if (spot.host_id === joel_embiid) {
-  //   headshot = window.joelembiid;
-  // }
+  if (spot.user.first_name === "ben" && spot.user.last_name === "simmons") {
+    headshot = window.bensimmons
+  } else if (spot.user.first_name === "joel" && spot.user.last_name === "embiid") {
+    headshot = window.joelembiid
+  }
 
   return (
     <div className="spot-intro-header-container">
       <div className="spot-intro-header">
-        {/* <h3 className="spot-intro-h3"><img className="spot-headshot-img" src={window.headshot} /></h3> */}
+        <h3 className="spot-intro-h3"><img className="spot-headshot-img" src={headshot} /></h3>
       </div>
       <div className="spot-intro-body-container">
-        {/* <h3>Hosted by {spot.user.first_name}</h3> */}
+        <h3 className="spot-body-h3">Hosted by {spot.user.first_name}</h3>
         <p className="spot-intro-p">{spot.description}</p>
       </div>
     </div>
