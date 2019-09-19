@@ -1121,10 +1121,7 @@ function (_React$Component) {
       setTimeout(function () {
         if (carouselImages[that.state.counter].className === "lastClone") {
           carouselSlide.style.transition = "none";
-          carouselSlide.style.transform = 'translateX(' + (-size * that.state.counter - 1) + 'px)';
-          that.setState({
-            counter: 7
-          });
+          carouselSlide.style.transform = 'translateX(' + -2600 + 'px)';
         } else {
           carouselSlide.style.transform = 'translateX(' + -size * that.state.counter + 'px)';
         }
