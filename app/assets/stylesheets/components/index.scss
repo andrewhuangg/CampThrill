@@ -1,128 +1,182 @@
-.spot-index-container {
+.splash-container {
   width: 100%;
   margin: 50px 0;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 
-  .spot-index-container-section {
-    width: 1080px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 10px;
-    padding-right: 10px;
+  .large-images-container {
+    width: 100%;
+    padding-bottom: 2%;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 1px 2px 2px 1px #e3e3e3;
 
-
-      .spot-index-body {
+    .large-image {
+      width: 1080px;
       display: flex;
-      justify-content: center;
       align-items: center;
-      width: 100%;
+      justify-content: center;
+      flex-direction: column;
+      
+      .large-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 45%;
+      }
+
+      .large-image-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $titleFont;
+        font-size: 27px;
+        font-weight: 600;
+        width: 40%;
+        margin-top: -3%;
+        text-align: center;
+        color: $standardColor;
+      }
+    }
+  }
+
+
+  .spot-index-container {
+    width: 100%;
+    margin: 50px 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 2px 2px 1px #e3e3e3;
+
+    .spot-index-container-section {
+      width: 1080px;
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: 10px;
+      padding-right: 10px;
       box-sizing: border-box;
 
 
-      .index-item-container {
+        .spot-index-body {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 100%;
         box-sizing: border-box;
 
-        .spot-ul {
-          list-style: none;
+
+        .index-item-container {
           display: flex;
-          flex-wrap: wrap;
-          justify-content: flex-start;
+          justify-content: center;
+          align-items: center;
           width: 100%;
           height: 100%;
           box-sizing: border-box;
 
-          .spot-item-container {
-            width: 33.33%;
-            position: relative;
-            height: 333px;
-            padding-left: 5px;
-            padding-right: 5px;
-            box-sizing: border-box;
+          .spot-ul {
+            list-style: none;
             display: flex;
-            justify-content: center;
-            margin-bottom: 1%;
-            
-            .spot-item {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+
+            .spot-item-container {
+              width: 33.33%;
               position: relative;
+              height: 333px;
+              padding-left: 5px;
+              padding-right: 5px;
               box-sizing: border-box;
               display: flex;
-              flex-direction: column;
-              box-shadow: 0px 1px 2px 0px #e3e3e3;
-
-              .spot-img {
-                display: block;
-                max-width: 100%;
-                height: 90%;
-                border: 0;
-                box-sizing: border-box;
-                overflow: hidden;
-              }
-
-              .spot-item-figcaption-container {
-                height: 25%;
-                padding: 0px;
-                box-sizing: border-box;
+              justify-content: center;
+              margin-bottom: 1%;
+              
+              .spot-item {
                 position: relative;
+                box-sizing: border-box;
                 display: flex;
-                justify-content: flex-start;
-                align-items: flex-start;
-                flex-wrap: wrap;
-                background-color: #F9F9F9;
-                box-shadow: 1px 2px 2px 1px #e3e3e3;
-                
-                .link-content-container {
-                  display: flex;
-                  flex-direction: column;
-                  justify-content: space-around;
-                  width: 100%;
-                  height: 100%;
-                  
-                  .spot-item-title-container {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    align-items: center;
-                    width: 100%;
-                    height: 100%;
-                    position: absolute;
+                flex-direction: column;
+                box-shadow: 0px 1px 2px 0px #e3e3e3;
 
-                    .spot-item-link {
-                      box-sizing: border-box;
-                      margin: 0;
-                      font-size: 14px;
-                      font-family: $navbarFont;
-                      display: flex;
-                      justify-content: space-around;
-                      padding: 0px 10px;
-                      margin: 0 5%;
-  
-                    }
-
-                     .tent_avatar {
-                        height: 30px;
-                        width: 30px;
-                        position: relative;
-                        margin: 0 5%;
-                      }
-                  }
-                  
-                  .spot-item-header-p {
-                    box-sizing: border-box;
-                    margin: 0;
-                    font-size: 12px;
-                    font-family: $navbarFont;
-                  }
+                .spot-img {
+                  display: block;
+                  max-width: 100%;
+                  height: 90%;
+                  border: 0;
+                  box-sizing: border-box;
+                  overflow: hidden;
                 }
 
+                .spot-item-figcaption-container {
+                  height: 25%;
+                  padding: 0px;
+                  box-sizing: border-box;
+                  position: relative;
+                  display: flex;
+                  justify-content: flex-start;
+                  align-items: flex-start;
+                  flex-wrap: wrap;
+                  background-color: #F9F9F9;
+                  box-shadow: 1px 2px 2px 1px #e3e3e3;
+                  
+                  .link-content-container {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    width: 100%;
+                    height: 100%;
+                    
+                    .spot-item-title-container {
+                      display: flex;
+                      flex-direction: row;
+                      justify-content: space-between;
+                      align-items: center;
+                      width: 100%;
+                      height: 100%;
+                      position: absolute;
+
+                      .spot-item-link {
+                        box-sizing: border-box;
+                        margin: 0;
+                        font-size: 14px;
+                        color: $standardColor;
+                        font-family: $navbarFont;
+                        display: flex;
+                        justify-content: space-around;
+                        padding: 0px 10px;
+                        margin: 0 5%;
+    
+                      }
+
+                      .tent_avatar {
+                          height: 30px;
+                          width: 30px;
+                          position: relative;
+                          margin: 0 5%;
+                        }
+                    }
+                    
+                    .spot-item-header-p {
+                      box-sizing: border-box;
+                      margin: 0;
+                      font-size: 12px;
+                      font-family: $navbarFont;
+                      color: $standardColor;
+                    }
+                  }
+
+                }
               }
             }
           }

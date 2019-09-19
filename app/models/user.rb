@@ -20,8 +20,6 @@ class User < ApplicationRecord
   foreign_key: :host_id,
   class_name: :Spot
 
-  
-
   attr_reader :password
   after_initialize :ensure_session_token
 

@@ -1,9 +1,9 @@
 .spotshow-master-container {
   width: 100%;
   margin: 0px auto;
+  color: #333333;
 
   .spot-show-container {
-    border: solid blue;
     height: 100%;
     width: 100%;
     display: flex;
@@ -21,12 +21,12 @@
   
       .main-show-container {
         height: 100%;
-        border: solid orange;
         display: flex;
         align-items: center;
         box-sizing: border-box;
         flex-direction: column;
         width: 100%;
+        margin-bottom: 2%;
         
   
         .show-header-container {
@@ -37,48 +37,45 @@
           box-sizing: border-box;
           flex-direction: column;
           align-items: center;
-          border: solid brown;
-            
         }
 
         .show-content-main-container {
           border: solid yellow;
           width: 1080px;
 
-
-
           .show-content {
             border: solid gray;
             width: 100%;
             height: 100%;
 
-            .content {
-              border: solid blue;
+            .content-header {
+              width: 66.66%;
+              border: solid green;
+              font-family: $navbarFont;
+              margin-top: 10px;
+              margin-bottom: 10px;
+              font-weight: 600;
+              font-size: 30px;
+              color: #333333;
+            }
 
-              .content-header {
-                width: 66.66%;
-                border: solid green;
-                font-size: 20px;
+            .content-list {
+              border: solid red;
+              margin: 10px 0;
+              width: 66.66%;
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+
+              .heart {
                 font-family: $navbarFont;
                 margin-top: 10px;
                 margin-bottom: 10px;
-                font-weight: 500;
-                font-size: 35px;
-              }
+                margin-right: 1%;
 
-              .content-list {
-                border: solid red;
-                margin: 10px 0;
-                width: 66.66%;
-
-                .nearby {
-                  border: solid limegreen;
-                  font-weight: 500;
-                  width: 66.66%;
-                  font-family: $navbarFont;
-                  margin-top: 10px;
-                  margin-bottom: 10px;
-                  font-size: 20px;
+                .heart-img {
+                  width: 25px;
+                  height: 25px;
                 }
               }
             }
@@ -114,11 +111,10 @@
 
               .overview-header {
                 border: solid limegreen;
+                margin-bottom: 5%;
               }
 
               .overview-cards {
-                border: solid orange;
-
               }
             }
           }

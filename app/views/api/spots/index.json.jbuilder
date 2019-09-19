@@ -26,10 +26,15 @@
     json.parking spot.parking
     json.wifi spot.wifi
     json.sites spot.sites
+    json.location spot.location
     json.picnic spot.picnic
     json.portable_water spot.portable_water
     json.trash_bins spot.trash_bins
     json.activities spot.activities
+    json.picnic spot.picnic
+    json.location spot.location
+    json.minimum_nights spot.minimum_nights
+    json.cancellation_policy spot.cancellation_policy
     json.indexPhoto url_for(spot.photo)
 
   end

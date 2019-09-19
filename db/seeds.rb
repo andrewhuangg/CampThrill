@@ -60,6 +60,11 @@ require 'open-uri'
     picnic: false,
     portable_water: true,
     trash_bins: false,
+    location: "Utah",
+    check_in: 1,
+    check_out: 2,
+    minimum_nights: 2,
+    cancellation_policy: "moderate",
     activities: ['biking', 'hiking', 'horseback_riding','wildlife', 'rock_climbing']
   )
 
@@ -85,6 +90,11 @@ require 'open-uri'
     picnic: true,
     portable_water: true,
     trash_bins: false,
+    location: "California",
+    check_in: 12,
+    check_out: 1,
+    minimum_nights: 0,
+    cancellation_policy: "flexible",
     activities: ['hiking', 'wildlife', 'base_jumping', 'rock_climbing']
   )
 
@@ -110,6 +120,11 @@ require 'open-uri'
     picnic: false,
     portable_water: false,
     trash_bins: false,
+    location: "Andalsnes, Norway",
+    check_in: 1,
+    check_out: 1,
+    minimum_nights: 0,
+    cancellation_policy: "flexible",
     activities: ['hiking', 'wildlife', 'base_jumping', 'rock_climbing']
   )
 
@@ -135,6 +150,11 @@ require 'open-uri'
     picnic: false,
     portable_water: true,
     trash_bins: false,
+    location: "Peru",
+    check_in: 12,
+    check_out: 1,
+    minimum_nights: 3,
+    cancellation_policy: "strict",
     activities: ['hiking', 'horseback_riding', 'wildlife']
   )
 
@@ -160,6 +180,11 @@ require 'open-uri'
     picnic: false,
     portable_water: true,
     trash_bins: true,
+    location: "Alaska",
+    check_in: 2,
+    check_out: 3,
+    minimum_nights: 1,
+    cancellation_policy: "moderate",
     activities: ['hiking', 'paddling', 'boating', 'fishing', 'swimming', 'wildlife', 'rock_climbing']
   )
 
@@ -185,6 +210,11 @@ require 'open-uri'
     picnic: false,
     portable_water: true,
     trash_bins: false,
+    location: "Utah",
+    check_in: 12,
+    check_out: 1,
+    minimum_nights: 1,
+    cancellation_policy: "moderate",
     activities: ['hiking', 'horseback_riding', 'wildlife', 'rock_climbing']
   )
 
@@ -210,6 +240,11 @@ require 'open-uri'
     picnic: true,
     portable_water: true,
     trash_bins: true,
+    location: "Wyoming",
+    check_in: 1,
+    check_out: 2,
+    minimum_nights: 1,
+    cancellation_policy: "strict",
     activities: ['hiking', 'horseback_riding', 'wildlife', 'rock_climbing']
   )
 
@@ -235,6 +270,11 @@ require 'open-uri'
     picnic: true,
     portable_water: true,
     trash_bins: true,
+    location: "California",
+    check_in: 12,
+    check_out: 1,
+    minimum_nights: 1,
+    cancellation_policy: "flexible",
     activities: ['hiking', 'wildlife', 'paddling', 'swimming']
   )
 
@@ -260,6 +300,11 @@ require 'open-uri'
     picnic: false,
     portable_water: false,
     trash_bins: false,
+    location: "Chile, Argentina",
+    check_in: 2,
+    check_out: 3,
+    minimum_nights: 1,
+    cancellation_policy: "moderate",
     activities: ['hiking','wildlife', 'rock_climbing']
   )
 

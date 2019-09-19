@@ -1,21 +1,19 @@
 .spot-cards {
   display: flex;
   justify-content: space-around;
-  border: solid blue;
   
   
   .spot-cards-container {
     display: flex;
     flex-direction: row;
     width: 100%;
-    border: solid palevioletred;
 
     .cards {
       // height: fit-content;
       height: 250px;
       width: 33%;
       box-sizing: border-box;
-      margin-left: 3%;
+      margin: 0% 2%;
       box-shadow: 0px 1px 1px 1px #e3e3e3;
 
       .cards-header {
@@ -32,12 +30,12 @@
         align-items: center;
 
         .activities-cards-info-container {
-          border: solid blue;
           display: flex;
           flex-direction: row;
           width: 100%;
           height: 100%;
           box-sizing: border-box;
+          align-items: center;
           justify-content: space-between;
         }
 
@@ -73,21 +71,18 @@
             box-sizing: border-box;
             font-size: 14px;
             padding: 6px 10px;
-            box-sizing: border-box;
           }
   
           .activities-cards-span {
             box-sizing: border-box;
             font-size: 14px;
             padding: 6px 10px;
-            box-sizing: border-box;
           }
 
           .campsitearea-cards-span {
             box-sizing: border-box;
             font-size: 14px;
             padding: 6px 10px;
-            box-sizing: border-box;
           }
 
       }

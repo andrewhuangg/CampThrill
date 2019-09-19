@@ -6,7 +6,7 @@ import Modal from '../../modal/modal';
 import SpotCards from './spot_cards_info';
 import SpotActivities from './spot_activities';
 import SpotIntro from './spot_show_intro';
-import SpotDetails from './spot_details';
+import SpotDetails from './spot_detail';
 
 class SpotShow extends React.Component {
 
@@ -29,13 +29,12 @@ class SpotShow extends React.Component {
               <div className="show-content-main-container">
                 <div className="show-content-container">
                   <div className="show-content">
-                    <div className="content">
-                      {/* header info */}
-                      <h1 className="content-header">{this.props.spot.title}</h1>
-                      <div className="content-list">
-                        <span className="nearby">Nearby: </span>
-                          Your dream camping trip.
-                      </div>
+                    <h1 className="content-header">{this.props.spot.title}</h1>
+                    <div className="content-list">
+                      <span className="heart">
+                        <img className="heart-img" src={window.heart }/>
+                      </span>
+                        Your dream camping trip.
                     </div>
                   </div>
                 </div>
@@ -46,12 +45,9 @@ class SpotShow extends React.Component {
 
         <div className="show-listing-container">
           <div className="show-listing">
-            show listing
             <div className="show-listing-row">
-              show listing row
-              <div className="show-listing-column">
-                spot column
 
+              <div className="show-listing-column">
                 <section className="overview">
                   <div className="overview-header">
                     <SpotIntro spot={this.props.spot} />
@@ -65,9 +61,9 @@ class SpotShow extends React.Component {
                   <div className="overview-activities">
                     <SpotActivities spot={this.props.spot} />
                   </div>
-                </section>
-                
+                </section>  
               </div>
+              
             </div>
           </div>
         </div>

@@ -1,0 +1,38 @@
+.spot-activities-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: solid black;
+  
+  
+  .spot-activity-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2% 2%;
+    box-shadow: 0px 1px 1px 0px #e3e3e3;
+    height: 100px;
+    width: 100px;
+    
+    
+    .spot-activities {
+      margin: 2% 0%;
+
+
+      .spot-activity-img {
+        height: 65px;
+        width: 65px;
+      }
+
+      .spot-activitiy-p {
+        margin: 2% 0%;
+        border: solid blue;
+        font-size: 15px;
+      }
+
+    }
+
+  }
+}

@@ -1,7 +1,34 @@
-  
-  
-  
-  .spot-intro-header-container {
+.spot-intro-header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  .spot-intro-header {
     display: flex;
-    flex-direction: column;  
+    border: solid black;
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+    .spot-intro-h3 {
+      font-size: 10px;
+    }
   }
+
+  .spot-intro-body-container {
+    display: flex;
+    border: solid red;
+    justify-content: center;
+    align-items: center;
+    margin: 0% 2%;
+
+    .spot-intro-p {
+      font-size: 10px;
+    }
+
+  }
+
+}
