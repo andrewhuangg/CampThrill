@@ -31,6 +31,7 @@
         font-size: 13px;
         font-family: $titleFont;
         color: $standardColor;
+        cursor: pointer;
       }
 
       .splash-index-btn::after {
@@ -131,6 +132,7 @@
               margin-bottom: 1%;
               
               .spot-item {
+                cursor: pointer;
                 position: relative;
                 box-sizing: border-box;
                 display: flex;

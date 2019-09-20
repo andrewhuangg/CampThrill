@@ -1875,16 +1875,7 @@ function (_React$Component) {
         src: window.signage
       }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "amenities-cards-span"
-      }, "Signage available"))), spot.tents && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "cards-filter"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "amenities-cards-info-container"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        className: "cards-img",
-        src: window.tent
-      }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-        className: "amenities-cards-span"
-      }, "Tents available"))), spot.wifi && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "Signage available"))), spot.wifi && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "cards-filter"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "amenities-cards-info-container"

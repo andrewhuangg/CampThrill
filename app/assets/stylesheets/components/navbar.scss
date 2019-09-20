@@ -25,6 +25,7 @@
 
       .hipcamp_logo {
         width: 75%;
+        cursor: pointer;
       }
 
     }
@@ -51,6 +52,7 @@
   .navbar-button {
     position: relative;
     padding-bottom: 1px;
+    cursor: pointer;
   }
 
   .navbar-button::after {

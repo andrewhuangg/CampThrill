@@ -69,18 +69,6 @@ class SpotCards extends React.Component {
                 </div>
               }
 
-              {spot.tents &&
-                <div className="cards-filter">
-                  <div className="amenities-cards-info-container">
-                    <img className="cards-img" src={window.tent} />
-                    &nbsp;
-                    <span className="amenities-cards-span">
-                      Tents available
-                    </span>
-                  </div>
-                </div>
-              }
-
               {spot.wifi &&
                 <div className="cards-filter">
                   <div className="amenities-cards-info-container">
