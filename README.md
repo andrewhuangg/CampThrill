@@ -42,7 +42,7 @@ Campthrill is a full-stack single-page web application based on the ingenious ho
 
 **Demo Login**
 
-<div style="width:100%;height:0;padding-bottom:55%;position:relative;"><iframe src="https://giphy.com/embed/Urc4pyu45Hx5Ne8GAP" width="90%" height="90%" style="position:absolute" frameBorder="0" allowFullScreen></iframe></div>
+![]()
 
 ```
 const Modal = ({ modal, closeModal }) => {
@@ -53,8 +53,7 @@ const Modal = ({ modal, closeModal }) => {
 ```
 
 **Spot Carousel**
-<div style="width:100%;height:0;padding-bottom:55%;position:relative;"><iframe src="https://giphy.com/embed/cmaFn8WxU0jTFbeuEz" width="90%" height="90%" style="position:absolute" frameBorder="0" allowFullScreen></iframe></div>
-
+![]()
 ```
 handleNextPhoto(e) {
   //prevent default
