@@ -13,6 +13,10 @@ class SpotIndexItem extends React.Component {
     this.props.ownProps.history.push(`/spots/${spotId}`)
   }
 
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     const tent_avatar = window.tent_avatar;
     const { spot, title } = this.props;

@@ -920,54 +920,89 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 
 
-var Footer = function Footer() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "footer-wrapper"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", {
-    className: "footer"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "footer-main"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "footer-description-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "footer-description"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "footer-description-text-title"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-    className: "footer-description-text-h3"
-  }, "CampThrill, a place for adrenaline, a place for adventure, a place you want to be.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "footer-description-text-body"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "footer-description-text-p"
-  }, "\"Discover unique experiences on ranches, nature preserves, farms, vineyards, and public campgrounds across the U.S. Book tent camping, treehouses, cabins, yurts, primitive backcountry sites, car camping, airstreams, tiny houses, RV camping, glamping tents and more.\""))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "footer-social-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "footer-social"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "footer-social-title"
-  }, "Social"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "footer-social-github"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fab fa-github"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "https://github.com/andrewhuangg",
-    className: "footer-social-github-link"
-  }, "Github")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "footer-social-linkedin"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fab fa-linkedin-in"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "https://www.linkedin.com/in/anuhangg/",
-    className: "footer-social-linkedin-link"
-  }, "Linkedin"))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "footer-bottom-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "footer-bottom"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Made in San Francisco."))));
-};
+
+var Footer =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(Footer, _React$Component);
+
+  function Footer(props) {
+    _classCallCheck(this, Footer);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Footer).call(this, props));
+  }
+
+  _createClass(Footer, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "footer-wrapper"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("footer", {
+        className: "footer"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "footer-main"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "footer-description-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "footer-description"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "footer-description-text-title"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+        className: "footer-description-text-h3"
+      }, "CampThrill, a place for adrenaline, a place for adventure, a place you want to be.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "footer-description-text-body"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "footer-description-text-p"
+      }, "\"Discover unique experiences on ranches, nature preserves, farms, vineyards, and public campgrounds across the U.S. Book tent camping, treehouses, cabins, yurts, primitive backcountry sites, car camping, airstreams, tiny houses, RV camping, glamping tents and more.\""))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "footer-social-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "footer-social"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "footer-social-title"
+      }, "Social"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "footer-social-github"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "fab fa-github"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "https://github.com/andrewhuangg",
+        className: "footer-social-github-link"
+      }, "Github")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "footer-social-linkedin"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "fab fa-linkedin-in"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "https://www.linkedin.com/in/anuhangg/",
+        className: "footer-social-linkedin-link"
+      }, "Linkedin"))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "footer-bottom-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "footer-bottom"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Made in San Francisco."))));
+    }
+  }]);
+
+  return Footer;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (Footer);
 
@@ -985,22 +1020,62 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 
 
-var Header = function Header() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "header-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "header-body"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
-    className: "header-body-title"
-  }, "A home for thrill seekers"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "header-body-text"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-    className: "header-body-h1"
-  }, "Book unique camping experiences on over ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, "300,000"), " campsites, ranches, vineyards, public parks and more."))));
-};
+
+var Header =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(Header, _React$Component);
+
+  function Header(props) {
+    _classCallCheck(this, Header);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Header).call(this, props));
+  }
+
+  _createClass(Header, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      window.scrollTo(0, 0);
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "header-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "header-body"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+        className: "header-body-title"
+      }, "A home for thrill seekers"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "header-body-text"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+        className: "header-body-h1"
+      }, "Book unique camping experiences on over ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, "300,000"), " campsites, ranches, vineyards, public parks and more."))));
+    }
+  }]);
+
+  return Header;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
 
@@ -1020,28 +1095,63 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _greeting_greeting_container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../greeting/greeting_container */ "./frontend/components/greeting/greeting_container.js");
 /* harmony import */ var _modal_modal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../modal/modal */ "./frontend/components/modal/modal.jsx");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 
 
 
 
-var Nav = function Nav() {
-  var hipcamp_logo = window.hipcamp_logo;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "master-nav-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
-    className: "nav-main-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "left-nav"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
-    to: "/"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: hipcamp_logo,
-    className: "hipcamp_logo"
-  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "right-nav"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_greeting_greeting_container__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_modal_modal__WEBPACK_IMPORTED_MODULE_2__["default"], null))));
-};
+
+var Nav =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(Nav, _React$Component);
+
+  function Nav(props) {
+    _classCallCheck(this, Nav);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Nav).call(this, props));
+  }
+
+  _createClass(Nav, [{
+    key: "render",
+    value: function render() {
+      var hipcamp_logo = window.hipcamp_logo;
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "master-nav-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
+        className: "nav-main-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "left-nav"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
+        to: "/"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: hipcamp_logo,
+        className: "hipcamp_logo"
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "right-nav"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_greeting_greeting_container__WEBPACK_IMPORTED_MODULE_1__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_modal_modal__WEBPACK_IMPORTED_MODULE_2__["default"], null))));
+    }
+  }]);
+
+  return Nav;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (Nav);
 
@@ -1212,50 +1322,90 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _spot_index_spots_index_container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./spot_index/spots_index_container */ "./frontend/components/spots/spot_index/spots_index_container.js");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 
 
 
-var Splash = function Splash() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "splash-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "spot-index-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
-    className: "spot-index-container-section"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
-    exact: true,
-    path: "/",
-    component: _spot_index_spots_index_container__WEBPACK_IMPORTED_MODULE_1__["default"]
-  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "large-images-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "large-image"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: window.hand,
-    className: "large-img"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "large-image-text"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Campthrill empowers people to share their land with campers."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "large-image"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: window.dollar,
-    className: "large-img"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "large-image-text"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Creating sustainable revenue and fostering community."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "large-image"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: window.palm,
-    className: "large-img"
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "large-image-text"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Unlocking access to incredible new places to camp.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-    className: "splash-index-btn"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
-    to: "/spots"
-  }, "See other camps!")))));
-};
+
+var Splash =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(Splash, _React$Component);
+
+  function Splash(props) {
+    _classCallCheck(this, Splash);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Splash).call(this, props));
+  }
+
+  _createClass(Splash, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      window.scrollTo(0, 0);
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "splash-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "spot-index-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+        className: "spot-index-container-section"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+        exact: true,
+        path: "/",
+        component: _spot_index_spots_index_container__WEBPACK_IMPORTED_MODULE_1__["default"]
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "large-images-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "large-image"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: window.hand,
+        className: "large-img"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "large-image-text"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Campthrill empowers people to share their land with campers."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "large-image"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: window.dollar,
+        className: "large-img"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "large-image-text"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Creating sustainable revenue and fostering community."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "large-image"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: window.palm,
+        className: "large-img"
+      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "large-image-text"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Unlocking access to incredible new places to camp.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        className: "splash-index-btn"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+        to: "/spots"
+      }, "See other camps!")))));
+    }
+  }]);
+
+  return Splash;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (Splash);
 
@@ -1316,6 +1466,11 @@ function (_React$Component) {
       this.props.ownProps.history.push("/spots/".concat(spotId));
     }
   }, {
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      window.scrollTo(0, 0);
+    }
+  }, {
     key: "render",
     value: function render() {
       var tent_avatar = window.tent_avatar;
@@ -1366,23 +1521,63 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _spots_index_container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./spots_index_container */ "./frontend/components/spots/spot_index/spots_index_container.js");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 
 
 
-var SpotIndex = function SpotIndex() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "splash-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "spot-index-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
-    className: "spot-index-container-section"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
-    exact: true,
-    path: "/spots",
-    component: _spots_index_container__WEBPACK_IMPORTED_MODULE_1__["default"]
-  }))));
-};
+
+var SpotIndex =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(SpotIndex, _React$Component);
+
+  function SpotIndex() {
+    _classCallCheck(this, SpotIndex);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(SpotIndex).apply(this, arguments));
+  }
+
+  _createClass(SpotIndex, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      window.scrollTo(0, 0);
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "splash-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "spot-index-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+        className: "spot-index-container-section"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+        exact: true,
+        path: "/spots",
+        component: _spots_index_container__WEBPACK_IMPORTED_MODULE_1__["default"]
+      }))));
+    }
+  }]);
+
+  return SpotIndex;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (SpotIndex);
 
@@ -1516,30 +1711,70 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 
-var SpotActivities = function SpotActivities(props) {
-  var spot = props.spot;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "spot-activities-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-    className: "activities-header"
-  }, "Activities"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "activities-array"
-  }, spot.activities.map(function (activity, idx) {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "spot-activity-cards",
-      key: idx
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      className: "spot-activities"
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-      className: "spot-activity-img",
-      src: window[activity]
-    })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-      className: "spot-activity-p"
-    }, "".concat(activity.split('_').join(' '))));
-  })));
-};
+
+var SpotActivities =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(SpotActivities, _React$Component);
+
+  function SpotActivities(props) {
+    _classCallCheck(this, SpotActivities);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(SpotActivities).call(this, props));
+  }
+
+  _createClass(SpotActivities, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      window.scrollTo(0, 0);
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var spot = this.props.spot;
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "spot-activities-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+        className: "activities-header"
+      }, "Activities"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "activities-array"
+      }, spot.activities.map(function (activity, idx) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "spot-activity-cards",
+          key: idx
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "spot-activities"
+        }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+          className: "spot-activity-img",
+          src: window[activity]
+        })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+          className: "spot-activity-p"
+        }, "".concat(activity.split('_').join(' '))));
+      })));
+    }
+  }]);
+
+  return SpotActivities;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (SpotActivities);
 
@@ -1556,177 +1791,217 @@ var SpotActivities = function SpotActivities(props) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 
-var SpotCards = function SpotCards(props) {
-  var spot = props.spot;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "spot-cards"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "spot-cards-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "cards"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "cards-header"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Amenities")), spot.cabins && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "cards-filter"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "amenities-cards-info-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "cards-img",
-    src: window.cabin
-  }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "amenities-cards-span"
-  }, "Cabins available"))), spot.showers && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "cards-filter"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "amenities-cards-info-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "cards-img",
-    src: window.shower
-  }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "amenities-cards-span"
-  }, "Showers available"))), spot.grills && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "cards-filter"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "amenities-cards-info-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "cards-img",
-    src: window.grill
-  }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "amenities-cards-span"
-  }, "Grills available"))), spot.signage && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "cards-filter"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "amenities-cards-info-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "cards-img",
-    src: window.signage
-  }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "amenities-cards-span"
-  }, "Signage available"))), spot.tents && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "cards-filter"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "amenities-cards-info-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "cards-img",
-    src: window.tent
-  }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "amenities-cards-span"
-  }, "Tents available"))), spot.wifi && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "cards-filter"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "amenities-cards-info-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "cards-img",
-    src: window.wifi
-  }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "amenities-cards-span"
-  }, "Wifi available"))), spot.picnic && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "cards-filter"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "amenities-cards-info-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "cards-img",
-    src: window.picnic
-  }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "amenities-cards-span"
-  }, "Picnic available"))), spot.trash_bins && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "cards-filter"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "amenities-cards-info-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "cards-img",
-    src: window.trash
-  }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "amenities-cards-span"
-  }, "Trash bins available")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "cards"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "cards-header"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Essentials")), spot.portable_water && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "cards-filter"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "amenities-cards-info-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "cards-img",
-    src: window.water
-  }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "amenities-cards-span"
-  }, "Portable water available"))), spot.pets_allowed > 0 && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "cards-filter"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "amenities-cards-info-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "cards-img",
-    src: window.pet
-  }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "amenities-cards-span"
-  }, "Pets allowed"))), spot.toilets && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "cards-filter"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "amenities-cards-info-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "cards-img",
-    src: window.toilet
-  }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "amenities-cards-span"
-  }, "Toilets available"))), spot.parking && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "cards-filter"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "amenities-cards-info-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "cards-img",
-    src: window.parking
-  }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "amenities-cards-span"
-  }, "Parking available"))), spot.campfires && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "cards-filter"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "amenities-cards-info-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "cards-img",
-    src: window.campfire
-  }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "amenities-cards-span"
-  }, "Campfire allowed")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "cards"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "cards-header"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Campsite area")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "cards-filter"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "campsitearea-cards-info-container"
-  }, spot.cabins ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "cards-img",
-    src: window.cabin
-  }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "cards-img",
-    src: window.tent
-  }), "\xA0", spot.cabins ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "campsitearea-cards-span"
-  }, "Enjoy our beautiful cabins") : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "campsitearea-cards-span"
-  }, "Bring your own tents"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "cards-filter"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "campsitearea-cards-info-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "cards-img",
-    src: window.sites
-  }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "campsitearea-cards-span"
-  }, "".concat(spot.sites, " sites available")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "cards-filter"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "campsitearea-cards-info-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "cards-img",
-    src: window.group_size
-  }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "campsitearea-cards-span"
-  }, "Up to ".concat(spot.group_size, " per site")))))));
-};
+
+var SpotCards =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(SpotCards, _React$Component);
+
+  function SpotCards(props) {
+    _classCallCheck(this, SpotCards);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(SpotCards).call(this, props));
+  }
+
+  _createClass(SpotCards, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      window.scrollTo(0, 0);
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var spot = this.props.spot;
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "spot-cards"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "spot-cards-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "cards"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "cards-header"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Amenities")), spot.cabins && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "cards-filter"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "amenities-cards-info-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "cards-img",
+        src: window.cabin
+      }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "amenities-cards-span"
+      }, "Cabins available"))), spot.showers && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "cards-filter"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "amenities-cards-info-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "cards-img",
+        src: window.shower
+      }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "amenities-cards-span"
+      }, "Showers available"))), spot.grills && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "cards-filter"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "amenities-cards-info-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "cards-img",
+        src: window.grill
+      }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "amenities-cards-span"
+      }, "Grills available"))), spot.signage && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "cards-filter"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "amenities-cards-info-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "cards-img",
+        src: window.signage
+      }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "amenities-cards-span"
+      }, "Signage available"))), spot.tents && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "cards-filter"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "amenities-cards-info-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "cards-img",
+        src: window.tent
+      }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "amenities-cards-span"
+      }, "Tents available"))), spot.wifi && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "cards-filter"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "amenities-cards-info-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "cards-img",
+        src: window.wifi
+      }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "amenities-cards-span"
+      }, "Wifi available"))), spot.picnic && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "cards-filter"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "amenities-cards-info-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "cards-img",
+        src: window.picnic
+      }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "amenities-cards-span"
+      }, "Picnic available"))), spot.trash_bins && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "cards-filter"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "amenities-cards-info-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "cards-img",
+        src: window.trash
+      }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "amenities-cards-span"
+      }, "Trash bins available")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "cards"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "cards-header"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Essentials")), spot.portable_water && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "cards-filter"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "amenities-cards-info-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "cards-img",
+        src: window.water
+      }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "amenities-cards-span"
+      }, "Portable water available"))), spot.pets_allowed > 0 && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "cards-filter"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "amenities-cards-info-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "cards-img",
+        src: window.pet
+      }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "amenities-cards-span"
+      }, "Pets allowed"))), spot.toilets && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "cards-filter"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "amenities-cards-info-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "cards-img",
+        src: window.toilet
+      }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "amenities-cards-span"
+      }, "Toilets available"))), spot.parking && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "cards-filter"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "amenities-cards-info-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "cards-img",
+        src: window.parking
+      }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "amenities-cards-span"
+      }, "Parking available"))), spot.campfires && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "cards-filter"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "amenities-cards-info-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "cards-img",
+        src: window.campfire
+      }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "amenities-cards-span"
+      }, "Campfire allowed")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "cards"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "cards-header"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Campsite area")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "cards-filter"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "campsitearea-cards-info-container"
+      }, spot.cabins ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "cards-img",
+        src: window.cabin
+      }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "cards-img",
+        src: window.tent
+      }), "\xA0", spot.cabins ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "campsitearea-cards-span"
+      }, "Enjoy our beautiful cabins") : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "campsitearea-cards-span"
+      }, "Bring your own tents"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "cards-filter"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "campsitearea-cards-info-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "cards-img",
+        src: window.sites
+      }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "campsitearea-cards-span"
+      }, "".concat(spot.sites, " sites available")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "cards-filter"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "campsitearea-cards-info-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "cards-img",
+        src: window.group_size
+      }), "\xA0", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+        className: "campsitearea-cards-span"
+      }, "Up to ".concat(spot.group_size, " per site")))))));
+    }
+  }]);
+
+  return SpotCards;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (SpotCards);
 
@@ -1743,32 +2018,72 @@ var SpotCards = function SpotCards(props) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 
-var SpotDetails = function SpotDetails(props) {
-  var spot = props.spot;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "spot-details-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "spot-details-header"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-    className: "spot-details-header-h3"
-  }, "Details")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "spot-details-body"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "spot-details-left"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "details"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Check in: After ", spot.check_in, " PM")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "details"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Check out: Before ", spot.check_out, " PM")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "details"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Cancellation policy: ", spot.cancellation_policy))), spot.minimum_nights < 1 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "spot-details-right"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " Minimum nights: none ")) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "spot-details-right"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " Minimum nights: ", spot.minimum_nights))));
-};
+
+var SpotDetails =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(SpotDetails, _React$Component);
+
+  function SpotDetails(props) {
+    _classCallCheck(this, SpotDetails);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(SpotDetails).call(this, props));
+  }
+
+  _createClass(SpotDetails, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      window.scrollTo(0, 0);
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var spot = this.props.spot;
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "spot-details-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "spot-details-header"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+        className: "spot-details-header-h3"
+      }, "Details")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "spot-details-body"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "spot-details-left"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "details"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Check in: After ", spot.check_in, " PM")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "details"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Check out: Before ", spot.check_out, " PM")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "details"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Cancellation policy: ", spot.cancellation_policy))), spot.minimum_nights < 1 ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "spot-details-right"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " Minimum nights: none ")) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "spot-details-right"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, " Minimum nights: ", spot.minimum_nights))));
+    }
+  }]);
+
+  return SpotDetails;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (SpotDetails);
 
@@ -1835,6 +2150,7 @@ function (_React$Component) {
   _createClass(SpotShow, [{
     key: "componentDidMount",
     value: function componentDidMount() {
+      window.scrollTo(0, 0);
       this.props.fetchSpot(this.props.match.params.spotId);
     }
   }, {
@@ -1955,35 +2271,75 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 
-var SpotIntro = function SpotIntro(props) {
-  var spot = props.spot;
-  var headshot;
 
-  if (spot.user.first_name === "ben" && spot.user.last_name === "simmons") {
-    headshot = window.bensimmons;
-  } else if (spot.user.first_name === "joel" && spot.user.last_name === "embiid") {
-    headshot = window.joelembiid;
+var SpotIntro =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(SpotIntro, _React$Component);
+
+  function SpotIntro(props) {
+    _classCallCheck(this, SpotIntro);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(SpotIntro).call(this, props));
   }
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "spot-intro-header-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "spot-intro-header"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-    className: "spot-intro-h3"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "spot-headshot-img",
-    src: headshot
-  }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "spot-intro-body-container"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-    className: "spot-body-h3"
-  }, "Hosted by ", spot.user.first_name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "spot-intro-p"
-  }, spot.description)));
-};
+  _createClass(SpotIntro, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      window.scrollTo(0, 0);
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var headshot;
+      var spot = this.props.spot;
+
+      if (spot.user.first_name === "ben" && spot.user.last_name === "simmons") {
+        headshot = window.bensimmons;
+      } else if (spot.user.first_name === "joel" && spot.user.last_name === "embiid") {
+        headshot = window.joelembiid;
+      }
+
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "spot-intro-header-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "spot-intro-header"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+        className: "spot-intro-h3"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        className: "spot-headshot-img",
+        src: headshot
+      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "spot-intro-body-container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+        className: "spot-body-h3"
+      }, "Hosted by ", spot.user.first_name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        className: "spot-intro-p"
+      }, spot.description)));
+    }
+  }]);
+
+  return SpotIntro;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (SpotIntro);
 

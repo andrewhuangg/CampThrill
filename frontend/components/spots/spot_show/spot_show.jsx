@@ -11,6 +11,7 @@ import SpotDetails from './spot_detail';
 class SpotShow extends React.Component {
 
   componentDidMount() {
+    window.scrollTo(0, 0);
     this.props.fetchSpot(this.props.match.params.spotId);
   }
 
@@ -65,7 +66,7 @@ class SpotShow extends React.Component {
                 </div>
               </section>  
             </div>
-            
+
           </div>
         </div>
       </div>
